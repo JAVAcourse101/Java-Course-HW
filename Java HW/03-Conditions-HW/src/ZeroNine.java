@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+
+public class ZeroNine {
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("enter a whole number between 0 nad 9 and we will tell you how it is written in English");
+		System.out.println("Enter a whole nimber");
+		long A = input.nextLong();
+		if (A>=0 && A<=9)
+		{
+			if (A==0)
+			{
+				System.out.println("Zero");
+			}
+			if (A==1)
+			{
+				System.out.println("One");
+			}
+			if (A==2)
+			{
+				System.out.println("Two");
+			}
+			if (A==3)
+			{
+				System.out.println("Three");
+			}
+			if (A==4)
+			{
+				System.out.println("Four");
+			}
+			if (A==5)
+			{
+				System.out.println("Five");
+			}
+			if (A==6)
+			{
+				System.out.println("Six");
+			}
+			if (A==7)
+			{
+				System.out.println("Seven");
+			}
+			if (A==8)
+			{
+				System.out.println("Eight");
+			}
+			if (A==9)
+			{
+				System.out.println("Nine");
+			}
+		}
+		else 
+		{
+			System.out.println("Out of range");
+		}
+		input.close();
+	}
+	
+}

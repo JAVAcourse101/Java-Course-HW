@@ -1,0 +1,33 @@
+import java.util.Scanner;
+	
+public class PersonalInfo {
+	
+	public static void main(String[] args) {
+		 
+		Scanner input = new Scanner(System.in, "UTF-8");
+		 
+		 System.out.println("Let`s fill some basic info about your employee");
+		 
+		 System.out.println("First name:");
+		 String nameF = input.nextLine();
+		 
+		 System.out.println("Last name:");
+         String nameL = input.nextLine();
+	
+         System.out.println("Age:");
+         Byte age = input.nextByte();
+         
+         char sexy= 'w';
+         System.out.println("Sex of the amployee, please do not answer with YES :) :");
+         sexy = input.next().charAt(0);
+         
+         System.out.println("PIN:");
+         Long pin = input.nextLong();
+	
+         System.out.println("Cell phone:");
+         Long mobile = input.nextLong();
+         
+         System.out.println("Summary: First name - "+nameF + ", Last name - "+nameL + ", Age - "+age+", Sex - "+sexy+ ", PIN - "+pin + ", Cell phone - "+mobile+"."); 
+         input.close();
+	}
+}

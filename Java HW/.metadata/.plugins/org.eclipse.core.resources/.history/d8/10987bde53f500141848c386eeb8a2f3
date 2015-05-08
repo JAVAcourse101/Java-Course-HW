@@ -1,0 +1,205 @@
+import java.util.Scanner;
+
+
+public class NineNineNine {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Enter a whole number between 0 and 999 and we will tell you how it is written in English");
+		int A = input.nextInt();
+		
+		int H = 0;
+        int D = 0;
+        int N = 0;
+		String W = null;
+		 
+		
+		String A0 = "Zero";
+		
+		
+		String A1 = "One";
+		String A2 = "Two";
+	    String A3 = "Three";
+		String A4= "Four";
+		String A5 = "Five";
+		String A6 = "Six";
+		String A7 = "Seven";
+		String A8 = "Eight";
+		String A9 = "Nine";
+		String A10 = "Ten";
+		
+		String A11 = "Eleven";
+		String A12 = "Twelve";
+		String A13 = "Thurteen";
+		String A14 = "Fourteen";
+		String A15 = "Fifteen";
+		String A16 = "Sixteen";
+		String A17 = "Seventeen";
+		String A18 = "Eighteen";
+		String A19 = "Nineteen";
+		
+		String A20 = "Twenty";
+		String A30 = "Thirty";
+		String A40 = "Forty";
+		String A50 = "Fifty";
+		String A60 = "Sixty";
+		String A70 = "Seventy";
+		String A80 = "Eighty";
+		String A90 = "Ninety";
+		
+		String A100 = "Hundred and";
+		
+		String S=" ";
+		H=A/100;
+		D=A%100/10;
+		N=A%10;
+		
+		System.out.println(H);
+		System.out.println(D);  
+		System.out.println(N);
+		
+		
+		if (H==0){
+			System.out.println(W);
+		}
+		if (H==1){
+			W=A1+S+A100;
+			System.out.println(W);
+		}
+		if (H==2){
+			W=A2+S+A100;
+			System.out.println(W);
+		}
+		if (H==3){
+			W=A3+S+A100;
+			System.out.println(W);
+		}
+		if (H==4){
+			W=A4+S+A100;
+			System.out.println(W);
+		}
+		if (H==5){
+			W=A5+S+A100;
+			System.out.println(W);
+		}
+		if (H==6){
+			W=A6+S+A100;
+			System.out.println(W);
+		}
+		if (H==7){
+			W=A7+S+A100;
+			System.out.println(W);
+		}
+		if (H==8){
+			W=A8+S+A100;
+			System.out.println(W);
+		}
+		if (H==9){
+			W=A9+S+A100;
+			System.out.println(W);
+		}
+		
+		
+		if (D==0){
+			System.out.println(W);
+			if(A==0){
+				W=A0;
+				System.out.println(W);				
+			}
+			if(A==1){
+				W=A1;
+				System.out.println(W);				
+			}
+			if(A==2){
+				W=A2;
+				System.out.println(W);				
+			}
+			if(A==3){
+				W=A3;
+				System.out.println(W);				
+			}
+			if(A==4){
+				W=A4;
+				System.out.println(W);				
+			}
+			if(A==5){
+				W=A5;
+				System.out.println(W);				
+			}
+			if(A==6){
+				W=A6;
+				System.out.println(W);				
+			}
+			if(A==7){
+				W=A7;
+				System.out.println(W);				
+			}
+			if(A==8){
+				W=A8;
+				System.out.println(W);				
+			}
+			if(A==9){
+				W=A9;
+				System.out.println(W);				
+			}
+			
+		}
+		if (D==1){
+			System.out.println(W);
+			if(A==10){
+				W=A10;
+				System.out.println(W);				
+			}
+			if(A==11){
+				W=A11;
+				System.out.println(W);				
+			}
+			if(A==12){
+				W=A12;
+				System.out.println(W);				
+			}
+			if(A==13){
+				W=A13;
+				System.out.println(W);				
+			}
+			if(A==14){
+				W=A14;
+				System.out.println(W);				
+			}
+			if(A==15){
+				W=A15;
+				System.out.println(W);				
+			}
+			if(A==16){
+				W=A16;
+				System.out.println(W);				
+			}
+			if(A==17){
+				W=A17;
+				System.out.println(W);				
+			}
+			if(A==18){
+				W=A18;
+				System.out.println(W);				
+			}
+			if(A==19){
+				W=A19;
+				System.out.println(W);				
+			}
+		}
+		if (D==2){
+			if(A==20){
+				W=A20;
+				System.out.println(W);
+				if(N==1){
+					W=W+A1;
+					System.out.println(W);				
+				}
+				
+			}
+		
+		}
+	}
+
+}

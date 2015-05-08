@@ -1,0 +1,61 @@
+import java.util.Scanner;
+
+
+public class NineNineNine {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Enter a whole number between 0 and 999 and we will tell you how it is written in English");
+		int A = input.nextInt();
+		
+		int H =0;
+	
+		String W = null;
+		 
+		
+		String A0 = "Zero";
+		
+		
+		String A1 = "One";
+		String A2 = "Two";
+	    String A3 = "Three";
+		String A4= "Four";
+		String A5 = "Five";
+		String A6 = "Six";
+		String A7 = "Seven";
+		String A8 = "Eight";
+		String A9 = "Nine";
+		String A10 = "Ten";
+		
+		String A11 = "Eleven";
+		String A12 = "Twelve";
+		String A13 = "Thurteen";
+		String A14 = "Fourteen";
+		String A15 = "Fifteen";
+		String A16 = "Sixteen";
+		String A17 = "Seventeen";
+		String A18 = "Eighteen";
+		String A19 = "Nineteen";
+		
+		String A20 = "Twenty";
+		String A30 = "Thirty";
+		String A40 = "Forty";
+		String A50 = "Fifty";
+		String A60 = "Sixty";
+		String A70 = "Seventy";
+		String A80 = "Eighty";
+		String A90 = "Ninety";
+		
+		String A100 = "Hundred";
+		System.out.println(A/100);
+//		if (A/100)=9){
+//			
+//		}
+//			
+		
+		
+		
+	}
+
+}
