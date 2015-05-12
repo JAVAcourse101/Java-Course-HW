@@ -1,0 +1,43 @@
+
+
+
+	
+import java.util.Scanner;
+
+public class FibonacciTwo {
+
+	public static void main(String[] args) {
+       
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Please enter the lenght of the arrey and we will fill it with the numbers " );
+		System.out.println("of Fibonacci and show it to you: " );
+		int L = input.nextInt();
+		
+		if (L==1){
+			System.out.println("0|" );
+			System.exit(1);
+		}
+		if (L==2){
+			System.out.println("0|1" );
+			System.exit(1);
+		}
+		
+		
+		int[] n = new int[L];
+		
+		n[0] = 0;
+		n[1] = 1;
+		System.out.print( n[0]+ "|"+ n[1]+ "|");
+		
+		for (int i = 2; i < L; i++) {
+		    n[i] = n[i-1] + n[i-2];
+		    System.out.print( n[i]+ "|" );
+		    
+		}
+		
+		
+		
+	}
+
+}

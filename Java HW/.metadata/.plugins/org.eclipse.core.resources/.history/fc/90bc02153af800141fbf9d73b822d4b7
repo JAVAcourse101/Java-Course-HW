@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+public class Test { 
+
+public static void main(String[] args) {
+	
+	Scanner input = new Scanner(System.in,"UTF-8");
+	System.out.println("Please enter the size of the square two dimencional arrey " );
+		int L = input.nextInt();
+		
+		int [][] matrix = new int [L][L];
+	
+//	int X_SIZE = 4;
+//	int Y_SIZE = 4;
+//	
+//    int[][] array = new int[X_SIZE][Y_SIZE];
+//
+//    for(int i = 0; i < X_SIZE; i++){
+//        for (int j = 0; j < Y_SIZE; j++){
+//            array[i][j] = i * X_SIZE + (j + 1);
+//            System.out.print(array[i][j] + " ");
+//        } 
+//        System.out.println();
+//    }
+//
+//    System.out.println("************");
+//    System.out.println("Spiral");       
+//
+//    spiralPrint(X_SIZE, Y_SIZE, array);
+//}
+
+//public static void spiralPrint(int xSize, int ySize, int matrix[][]){
+//    int i,  k = 0, l = 0;
+//    xSize--;  ySize--;      
+
+    int xSize=L;
+    int ySize=L;
+    int i=0;
+    int k=0;
+    int l=0;
+    int S=1;
+    
+    
+    while(k <= xSize && l <= ySize){
+        for(i = l; i <= ySize; ++i) {
+            System.out.print(matrix[k][i]+ " ");
+            matrix[k][i]=S;
+        }           
+        k++;
+
+        for(i = k; i <= xSize; ++i) {
+            System.out.print(matrix[i][ySize] + " ");
+        }
+        ySize--;
+
+        for(i = ySize; i >= l; --i) {
+                System.out.print(matrix[xSize][i] + " ");
+        }
+        xSize--;
+
+
+        for(i = xSize; i >= k; --i) {
+            System.out.print(matrix[i][l] + " ");
+        }
+        l++;
+    }
+}
+}

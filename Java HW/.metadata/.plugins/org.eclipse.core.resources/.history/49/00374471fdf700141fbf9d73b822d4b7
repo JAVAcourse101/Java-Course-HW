@@ -1,0 +1,27 @@
+
+
+
+	
+import java.util.Scanner;
+
+public class First {
+
+	public static void main(String[] args) {
+       
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Please enter the lenght of the arrey and we will fill it with the number " );
+		System.out.println("from 1 to N and tell you the sum of all even elements of the arrey" );
+		int L = input.nextInt();
+		
+		int[] n = new int[L];
+
+		for (int i = 0; i < L; i++) {
+		    n[i] = i + 1;
+		    System.out.println( n[i] );
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,36 @@
+import java.util.Scanner;
+
+
+public class SearchInArrey {
+
+	public static void main(String[] args) {
+    Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Hello " );
+		System.out.println("We have this arrey please enter a number and we will tell you the index of the first match,if it is in the arrey. " );
+		int X = input.nextInt();
+		
+		int L = 18;
+		
+		int[] n = new int[L];
+
+		for (int i = 0; i < L; i++) {
+			n[i] = i + 3;
+		    System.out.print( n[i]+ "|" );
+		    
+		}
+		
+		for (int i = 0; i < L; i++) {
+			if (n[i] == X){
+				System.out.print("The Index of " + X +"is" + i );
+				System.exit(1);
+			}
+		    System.out.print( n[i]+ "|" );
+		    
+		}
+		System.out.print(  "Sorry your number is not in the arrey" );
+		input.close();
+
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Binary {
+
+	public static void main(String[] args) {
+         Scanner input = new Scanner(System.in,"UTF-8");
+		
+        System.out.println("Please enter the lenght of the arrey and we will fill it with numbers " );
+ 		int L = input.nextInt();
+		
+		int[] n = new int[L];
+
+		for (int i = 0; i < L; i++) {
+			n[i] = i*2 + 1;
+		    System.out.print( n[i]+ "|" );
+		   
+		}
+		   
+		System.out.println("Please enter a number and we will return it`s index using the binary search method" );
+		int X = input.nextInt();
+	}
+
+}
