@@ -1,0 +1,24 @@
+
+public class catArrey {
+
+	public static void main(String[] args) {
+		
+		cat [] catA= new cat[10];
+		catA[0]= new cat("Marry",8);
+		catA[1]= new cat("Zar",9);
+		catA[2]= new cat("Mor",7);
+		catA[3]= new cat("Kora",78);
+		catA[4]= new cat("Moya",10);
+		catA[5]= new cat("Maga",11);
+		catA[6]= new cat("Mazga",12);
+		catA[7]= new cat("Zop",8);
+		catA[8]= new cat("Ruby",30);
+		catA[9]= new cat("Toshko",0);
+		
+		for(int i=0; i<=9; i++){
+			catA[i].say();
+		}
+		
+	}
+
+}

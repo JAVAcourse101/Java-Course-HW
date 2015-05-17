@@ -1,0 +1,20 @@
+
+public class Store extends Stock{
+	String name;
+	String loStockion;
+	Stock [] catA= new Stock[10];
+	
+	
+	public Store(){
+		super();
+		this.name="Undefined";
+		this.loStockion="Undefined";
+	}
+	
+	public Store(int price, boolean instock,String name, String loStockion){
+		super(price,instock);
+		this.name=name;
+		this.loStockion=loStockion;
+	}
+	
+}

@@ -1,0 +1,22 @@
+
+public class cat {
+ String name;
+ int age;
+ 
+ public cat(){
+ this.name="Unnamed";
+ this.age=0;
+ }
+ 
+ public cat(String name, int age){
+	 this.name=name;
+	 this.age=age;
+ }
+ 
+ public void say(){
+	 System.out.println("Hi I`m a cat. My name is "+name+"and I am "+age+"years old");
+ }
+ 
+ 
+ 
+}

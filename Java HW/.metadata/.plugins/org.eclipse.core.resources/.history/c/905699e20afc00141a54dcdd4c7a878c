@@ -1,0 +1,13 @@
+
+public class catArrey {
+
+	public static void main(String[] args) {
+		
+//		private cat [] cat= new cat[10];
+		
+		
+		cat one= new cat("Marry",10);
+one.say();
+	}
+
+}

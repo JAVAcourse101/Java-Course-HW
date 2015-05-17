@@ -1,0 +1,46 @@
+
+public class Sort {
+
+	public static void main(String[] args) {
+		Car [] carA = new Car [10];
+		
+		carA[0]= new SUV(1000,true);
+		carA[1]= new SUV(500,true);
+		carA[2]= new SUV(10000,true);
+		carA[3]= new SUV(15000,true);
+		carA[4]= new SUV(15,true);
+		carA[5]= new Automobile(1234,13);
+		carA[6]= new Automobile(12345,17);
+		carA[7]= new Automobile(1034,18);
+		carA[8]= new Automobile(12346,19);
+		carA[9]= new Automobile(1934,20);
+		
+		
+		System.out.print(carA);
+		
+		
+//		boolean M = false;   
+//	     int temp;   
+//
+//	     while ( M==false )
+//	     {
+//	            M= true;    
+//	            for( int j=0;  j < carA.length -1;  j++ ){
+//	            
+//	                   if ( carA[ j ][0] > carA[j+1][0] ){
+//	                   
+//	                           temp = carA[ j ];
+//	                           carA[ j ] = carA[ j+1 ];
+//	                           carA[ j+1 ] = temp;
+//	                           M = false;                
+//	                   } 
+//	            }
+//	     }
+	     
+	     for (int i = 0; i < L; i++) {
+			    System.out.print( n[i]+ "|" );
+			   
+		 }
+		}
+	
+}

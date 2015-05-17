@@ -1,0 +1,20 @@
+
+abstract public class Stock {
+	
+	int price;
+	boolean instock;
+
+	public Stock(){
+		this.price=0;
+		this.instock=false;
+	}
+	
+	public Stock(int price, boolean instock){
+		this.price=price;
+		this.instock=instock;
+	}
+	
+	public void say(){
+		System.out.println("Price= "+price+";\nInstock= " + instock+":");
+	}
+}

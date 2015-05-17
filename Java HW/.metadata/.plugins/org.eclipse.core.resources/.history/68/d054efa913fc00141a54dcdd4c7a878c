@@ -1,0 +1,22 @@
+
+public class Sort {
+
+	public static void main(String[] args) {
+		Car [] carA = new Car [10];
+		
+		carA[0]= new SUV(1000,true);
+		carA[1]= new SUV(500,true);
+		carA[2]= new SUV(10000,true);
+		carA[3]= new SUV(15000,true);
+		carA[4]= new SUV(15,true);
+		carA[5]= new Automobile(15,1978);
+		carA[6]= new Automobile(15,1978);
+		carA[7]= new Automobile(15,1978);
+		carA[8]= new Automobile(15,1978);
+		carA[9]= new Automobile(15,1978);
+		
+		System.out.println(carA);
+
+		}
+	
+}

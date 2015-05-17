@@ -1,0 +1,15 @@
+
+public class catArrey {
+
+	public static void main(String[] args) {
+		
+		cat [] catA= new cat[10];
+		for(int i=0; i<=9; i++){
+			System.out.println(catA[i]);
+		}
+		
+//		cat one= new cat("Marry",10);
+//one.say();
+	}
+
+}

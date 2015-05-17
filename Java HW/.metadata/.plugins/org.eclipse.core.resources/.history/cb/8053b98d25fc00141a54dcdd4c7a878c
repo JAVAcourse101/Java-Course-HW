@@ -1,0 +1,17 @@
+
+public class Store extends Stock{
+	String name;
+	String location;
+	
+	public Store(){
+		super();
+		this.name="Undefined";
+		this.location="Undefined";
+	}
+	
+	public Store(int price, boolean instock,String name, String location){
+		super(price,instock);
+		this.name=name;
+		this.location=location;
+	}
+}

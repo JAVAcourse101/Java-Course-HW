@@ -1,0 +1,50 @@
+
+public class Sort {
+
+	public static void main(String[] args) {
+		int test;
+		
+		Car [] carA = new Car [10];
+		
+		carA[0]= new SUV(1000,true);
+		carA[1]= new SUV(500,true);
+		carA[2]= new SUV(10000,true);
+		carA[3]= new SUV(15000,true);
+		carA[4]= new SUV(35000,true);
+		carA[5]= new Automobile(1500,10);
+		carA[6]= new Automobile(700,12);
+		carA[7]= new Automobile(800,9);
+		carA[8]= new Automobile(3500,20);
+		carA[9]= new Automobile(9000,22);
+		
+//		test=carA[0]pri;
+		carA[0].pri(13);
+		
+		
+//		for(int i=0; i<=9; i++){
+//			carA[i].get();
+//		}
+//
+//		boolean M = false;   
+//	     Car temp;
+//	     int price;
+//
+//	     while ( M==false )
+//	     {
+//	            M= true;    
+//	            for( int j=0;  j < carA.length -1;  j++ ){
+//	            
+//	                   if ( carA[j].get() > carA[j+1].get() ){
+//	                   
+//	                           temp = carA[ j ].get;
+//	                           carA[ j ] = carA[ j+1 ];
+//	                           carA[ j+1 ] = temp;
+//	                           M = false;                
+//	                   } 
+//	            }
+//	     }
+		
+		
+		}
+	
+}

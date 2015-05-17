@@ -1,0 +1,128 @@
+import java.util.Scanner;
+
+
+public class Store extends Stock{
+	String name;
+	String loStockion;
+	Stock [] inv= new Stock[5];
+	
+	int i=0;
+	
+	public Store(){
+		super();
+		this.name="Undefined";
+		this.loStockion="Undefined";
+	}
+	
+	public Store(int price, boolean instock,String name, String loStockion){
+		super(price,instock);
+		this.name=name;
+		this.loStockion=loStockion;
+	}
+	
+	public Store(String name){
+		this.name=name;
+		
+	}
+	
+	
+	public void add(String type){
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		
+			if (type.equals("Bev")){
+				System.out.println("Plesase enter price");
+				int price=input.nextInt();
+			 
+				System.out.println("Plesase enter liters");
+				int liter=input.nextInt();
+				
+				input.nextLine();
+			 
+				System.out.println("Plesase enter Brand");
+				String brand=input.nextLine();
+			 
+				inv[i]=new Bev (price,true,liter,brand);
+				inv[i].say();
+				i++;
+			}
+		
+			if (type.equals("Des")){
+				System.out.println("Plesase enter price");
+				int price=input.nextInt();
+			 
+				System.out.println("Plesase enter kgrams of the desert");
+			 	int kgrams=input.nextInt();
+			 	
+			 	input.nextLine();
+			 
+			 	System.out.println("Plesase enter the season of the dessert");
+			 	String season=input.nextLine();
+			 
+			 	inv[i]=new Des (price,true,kgrams,season);
+			 	inv[i].say();	
+			 	i++;
+			}
+		
+			if (type.equals("Fruit")){
+				System.out.println("Plesase enter price");
+				int price=input.nextInt();
+			 
+				System.out.println("Plesase enter how many fruits");
+				int kgrams=input.nextInt();
+				
+				input.nextLine();
+			 
+				System.out.println("Plesase enter the season of the fruit");
+				String season=input.nextLine();
+				
+				
+			 
+				inv[i]=new Fruit (price,true,kgrams,season);
+				inv[i].say();
+				i++;
+			}
+		
+			if (type.equals("Meat")){
+				System.out.println("Plesase enter price");
+				int price=input.nextInt();
+			 
+				System.out.println("Plesase enter how weight of the meat in kgrams");
+				int kgrams=input.nextInt();
+			 
+				input.nextLine();
+				
+				System.out.println("Plesase enter the season from which is the meat");
+				String season=input.nextLine();
+			 
+				inv[i]=new Meat (price,true,kgrams,season);
+				inv[i].say();
+				i++;
+			}
+			
+			if (type.equals("Veg")){
+				System.out.println("Plesase enter price");
+				int price=input.nextInt();
+			 
+				System.out.println("Plesase enter the weight of the vegtable in kgrams");
+				int kgrams=input.nextInt();
+			    
+				input.nextLine();
+				
+			    System.out.println("Plesase enter the season from which is the vegtable");
+				String season=input.nextLine();
+			 
+				inv[i]=new Veg (price,true,kgrams,season);
+				inv[i].say();
+				i++;
+			}
+		
+	}
+	
+	public void set(boolean set){
+        if(set == false){
+			super.instock = set;
+		}
+    }
+}
