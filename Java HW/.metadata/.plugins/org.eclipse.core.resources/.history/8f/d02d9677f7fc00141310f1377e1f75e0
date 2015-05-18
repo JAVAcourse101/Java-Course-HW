@@ -1,0 +1,48 @@
+import java.util.Scanner;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter the name of the store:");
+		String name=scanner.nextLine();
+		
+		System.out.println("Plesase enter the location of the store:");
+		String location=scanner.nextLine();
+		
+		Store product =new Store (name,location);
+		boolean mark1=false;
+		
+		for (;mark1==false;){
+			String type="Remove";
+			System.out.println("Plesase enter type of product you want to add in this store (Bev,Des,Fruit,Meat,Veg)\nOr type Remove to mark a product as missing");
+			
+			int choice = 0;
+			while (scanner.hasNext()){
+			    if (scanner.hasNextInt()){
+			        choice = scanner.nextInt();
+			        break;
+			    } else {
+//			        scanner.next(); // Just discard this, not interested...
+			    }
+			}
+			type=scanner.nextLine();
+            
+            if (type.equals("Remove")){
+            	mark1=true;
+            	
+            	System.out.println("There are "+Stock.getstockCount()+" products which one do you want to remove");
+            	
+            }
+            
+			
+			product.add(type);
+		
+		}
+		scanner.close();
+	}
+
+}

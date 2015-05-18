@@ -1,0 +1,28 @@
+
+abstract public class Stock {
+	static int stockCount=0;
+	int price;
+	boolean instock;
+	
+
+	public Stock(){
+		this.price=0;
+		this.instock=true;
+		stockCount++;
+	}
+	
+	public Stock(int price, boolean instock){
+		this.price=price;
+		this.instock=instock;
+		stockCount++;
+	}
+	
+	public void say(){
+		System.out.println("Price = "+price+":\nInstock= " +instock+":");
+	}
+	
+	public static int getstockCount() {
+		return stockCount;
+	}
+	
+}

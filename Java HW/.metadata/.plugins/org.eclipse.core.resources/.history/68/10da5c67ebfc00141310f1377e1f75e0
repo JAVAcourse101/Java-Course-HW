@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter The name of the store");
+		String name=input.nextLine();
+		
+		System.out.println("Plesase enter The location of the store");
+		String location=input.nextLine();
+		
+		Store product =new Store (name,location);
+		
+		
+		System.out.println("Plesase enter type of product you want to add in this store (Bev,Des,Fruit,Meat,Veg)");
+		String type=input.nextLine();
+		
+		product.add(type);
+		input.close();
+	}
+
+}

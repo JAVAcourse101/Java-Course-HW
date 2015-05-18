@@ -6,12 +6,36 @@ public class Test {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in,"UTF-8");
-		System.out.println("Plesase enter type of product you want to add(Bev,Des,Fruit,Meat,Veg)");
-		String type=input.nextLine();
 		
-		Store product =new Store (type);
-		product.add(type);
-input.close();
+		System.out.println("Plesase enter the name of the store:");
+		String name=input.nextLine();
+		
+		System.out.println("Plesase enter the location of the store:");
+		String location=input.nextLine();
+		
+		Store product =new Store (name,location);
+		boolean mark1=false;
+		
+		for (;mark1==false;){
+			
+			System.out.println("Plesase enter type of product you want to add in this store (Bev,Des,Fruit,Meat,Veg)\nOr type Remove to mark a product as missing");
+            String type=input.nextLine();
+            
+            if (type.equals("Remove")){
+            	mark1=true;
+            	
+            	System.out.println("There are "+Stock.getstockCount()+" products which one do you want to remove");
+            	int b=input.nextInt();
+            	product.set(false, b);
+            	
+            	
+            	
+            }
+            
+			product.add(type);
+		
+		}
+		
 	}
 
 }

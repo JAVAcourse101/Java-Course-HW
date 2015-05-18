@@ -1,12 +1,17 @@
 
+
+
 public class Bev extends Stock{
 	int liters;
 	String brand;
+	public static int bevCount = 0;
+	
 	
 	public Bev(){
 		super();
 		this.liters=0;
 		this.brand="Undefined";
+		bevCount ++;
 	}
 	
 	
@@ -15,9 +20,12 @@ public class Bev extends Stock{
 		super(price,instock);
 		this.liters=liters;
 		this.brand=brand;
+		bevCount ++;
 	}
 	
-//	public void saybev(){
-//		System.out.println("Price= "+price+";\nInstock= " + instock + ":" +"\n" + liters + brand);
-//	} 
+	public static int getbevCount() {
+		return bevCount;
+	}
+	
+	
 }

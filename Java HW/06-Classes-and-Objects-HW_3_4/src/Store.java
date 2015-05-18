@@ -1,30 +1,25 @@
 import java.util.Scanner;
 
 
-public class Store extends Stock{
+public class Store {
 	String name;
-	String loStockion;
-	Stock [] inv= new Stock[5];
+	String location;
+	Stock [] inv= new Stock[100];
 	
 	int i=0;
 	
+	
 	public Store(){
-		super();
 		this.name="Undefined";
-		this.loStockion="Undefined";
+		this.location="Undefined";
 	}
 	
-	public Store(int price, boolean instock,String name, String loStockion){
-		super(price,instock);
+	public Store(String name, String location){
 		this.name=name;
-		this.loStockion=loStockion;
+		this.location=location;
 	}
 	
-	public Store(String name){
-		this.name=name;
 		
-	}
-	
 	
 	public void add(String type){
 		
@@ -44,7 +39,9 @@ public class Store extends Stock{
 				String brand=input.nextLine();
 			 
 				inv[i]=new Bev (price,true,liter,brand);
-				inv[i].say();
+				inv[i].setTemp1(liter);
+				inv[i].setTemp2(brand);
+				inv[i].saybev();
 				i++;
 			}
 		
@@ -52,16 +49,18 @@ public class Store extends Stock{
 				System.out.println("Plesase enter price");
 				int price=input.nextInt();
 			 
-				System.out.println("Plesase enter kgrams of the desert");
-			 	int kgrams=input.nextInt();
+				System.out.println("Plesase enter calories of the desert");
+			 	int cal=input.nextInt();
 			 	
 			 	input.nextLine();
 			 
-			 	System.out.println("Plesase enter the season of the dessert");
-			 	String season=input.nextLine();
+			 	System.out.println("Plesase enter from which country is the dessert");
+			 	String country=input.nextLine();
 			 
-			 	inv[i]=new Des (price,true,kgrams,season);
-			 	inv[i].say();	
+			 	inv[i]=new Des (price,true,cal,country);
+			 	inv[i].setTemp1(cal);
+				inv[i].setTemp2(country);
+				inv[i].saydes();
 			 	i++;
 			}
 		
@@ -70,17 +69,19 @@ public class Store extends Stock{
 				int price=input.nextInt();
 			 
 				System.out.println("Plesase enter how many fruits");
-				int kgrams=input.nextInt();
+				int count=input.nextInt();
 				
 				input.nextLine();
 			 
-				System.out.println("Plesase enter the season of the fruit");
-				String season=input.nextLine();
+				System.out.println("Plesase enter the color of the fruit");
+				String color=input.nextLine();
 				
 				
 			 
-				inv[i]=new Fruit (price,true,kgrams,season);
-				inv[i].say();
+				inv[i]=new Fruit (price,true,count,color);
+				inv[i].setTemp1(count);
+				inv[i].setTemp2(color);
+				inv[i].sayfruit();
 				i++;
 			}
 		
@@ -88,16 +89,19 @@ public class Store extends Stock{
 				System.out.println("Plesase enter price");
 				int price=input.nextInt();
 			 
-				System.out.println("Plesase enter how weight of the meat in kgrams");
-				int kgrams=input.nextInt();
+				System.out.println("Plesase enter how weight of the meat in grams");
+				int grams=input.nextInt();
 			 
 				input.nextLine();
 				
-				System.out.println("Plesase enter the season from which is the meat");
-				String season=input.nextLine();
+				System.out.println("Plesase enter the animal from which is the meat");
+				String animal=input.nextLine();
 			 
-				inv[i]=new Meat (price,true,kgrams,season);
-				inv[i].say();
+				inv[i]=new Meat (price,true,grams,animal);
+				
+				inv[i].setTemp1(grams);
+				inv[i].setTemp2(animal);
+				inv[i].saymeat();
 				i++;
 			}
 			
@@ -114,16 +118,17 @@ public class Store extends Stock{
 				String season=input.nextLine();
 			 
 				inv[i]=new Veg (price,true,kgrams,season);
-				inv[i].say();
+				inv[i].setTemp1(kgrams);
+				inv[i].setTemp2(season);
+				inv[i].sayveg();
 				i++;
 			}
 			input.close();
 		
 	}
 	
-	public void set(boolean set){
-        if(set == false){
-			super.instock = set;
-		}
+	public void set(boolean set,int b){
+        	inv[b].setinstock(set);
+		
     }
 }
