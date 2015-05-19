@@ -7,7 +7,7 @@ public class Test {
 		
 		Teacher zor =new Teacher ("Zor","Gizev",18,5,"BEL");
 		
-		Teacher gor =new Teacher ("por1","Gizev",18,3,"BEL");
+		Teacher gor =new Teacher ("por1","Gizev",18,-3,"BEL");
 		
 		bor.bye();
 		zor.hello();

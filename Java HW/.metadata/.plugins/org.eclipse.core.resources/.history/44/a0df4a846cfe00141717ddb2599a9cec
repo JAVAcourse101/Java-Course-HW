@@ -47,7 +47,6 @@ public abstract class Person{
 		}
 		else{
 			System.out.println("WY must be possitive for "+fName+" "+lName);
-			System.exit(1);
 		}
 	}
 	

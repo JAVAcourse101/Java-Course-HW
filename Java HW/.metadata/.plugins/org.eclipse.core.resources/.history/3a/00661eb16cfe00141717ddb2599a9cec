@@ -5,7 +5,7 @@ public class Test {
 		
 		Teacher bor =new Teacher ("Boris","Gichev",18,5,"BEL");
 		
-		Teacher zor =new Teacher ("Zor","Gizev",18,5,"BEL");
+		Teacher zor =new Teacher ("Zor","Gizev",18,-5,"BEL");
 		
 		Teacher gor =new Teacher ("por1","Gizev",18,3,"BEL");
 		
