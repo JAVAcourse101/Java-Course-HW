@@ -1,0 +1,11 @@
+
+public class Assistant extends Lecturer{
+	
+	Boolean headOrNo;
+	
+	public Assistant(){
+		super();
+		this.headOrNo=false;
+	}
+
+}

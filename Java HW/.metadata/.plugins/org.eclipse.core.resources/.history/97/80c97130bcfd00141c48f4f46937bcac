@@ -1,0 +1,32 @@
+
+
+
+public class Professor extends Lecturer{
+
+	String title;
+	
+	public Professor(){
+		super();
+		this.title="no title";
+	}
+	
+	
+	
+	public void titleWorkY(){
+		
+		System.out.println("My title is "+ title+"and i have "+getWY()+" work experience");
+		
+	}
+	
+	public void setTitle(String title){
+		this.title=title;
+	}
+	
+	public void homeWork() {
+		
+		System.out.println(" The professor is checking ...");
+		
+		
+		
+	}
+}

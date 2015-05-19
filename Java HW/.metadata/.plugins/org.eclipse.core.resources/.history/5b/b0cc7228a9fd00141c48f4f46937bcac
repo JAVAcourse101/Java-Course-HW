@@ -1,0 +1,46 @@
+import java.util.Scanner;
+
+
+public class Teacher extends Person {
+	
+	String Subject;
+	
+	public Teacher(){
+		setFName("no fname");
+		setLName("no lname");
+		setWY(0);
+		setAge(0);
+		setSubject("no subject");
+	}
+	
+	public Teacher(String fName,String lName,int age,int workY,String subject){
+		super.fName=fName;
+		super.lName=lName;
+		super.workYears=workY;
+		super.age=age;
+		this.Subject=subject;
+	}
+	
+	public void setSubject(String subject){
+		this.Subject=subject;
+	}
+	
+	public void homeW() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("I am checking the homeworks");
+		input.close();
+	}
+	
+	public void hi() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Hi");
+		input.close();
+	}
+	
+	public void bye() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Bye");
+		input.close();
+	}
+
+}

@@ -1,0 +1,22 @@
+
+
+
+public class Assistant extends Lecturer{
+	
+	Boolean headOrNo;
+	
+	public Assistant(){
+		super();
+		this.headOrNo=false;
+	}
+
+	
+	public void nameHeadOrNo(){
+		System.out.println("My name is "+ getFname()+" "+getLname()+"and I am a head assitant( "+headOrNo+")");
+	}
+	
+	public void article(){
+		System.out.println("I am wrting an article.");
+		
+	}
+}

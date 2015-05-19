@@ -1,0 +1,40 @@
+
+abstract public class Person {
+
+	protected String fName;
+	protected String lName;
+	protected int age;
+	protected int workYears;
+	
+	public String getFname() {
+		return fName;
+	}
+	
+	public String getLname() {
+		return lName;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public int getWY() {
+		return workYears;
+	}
+	
+	public void setFName(String fName) {
+		this.fName = fName;
+	}
+	
+	public void setLName(String lName) {
+		this.lName = lName;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void setWorkYears (int workYears) {
+		this.workYears = workYears;
+	}
+}

@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+
+public class Lecturer extends Person {
+	
+	String uniName;
+
+	public Lecturer(){
+		setFName("no fname");
+		setLName("no lname");
+		setWY(0);
+		setAge(0);
+		setUniName("no uni");
+	}
+	
+	public Lecturer(String fName,String lName,int age,int workY,String uniName){
+		super.fName=fName;
+		super.lName=lName;
+		super.workYears=workY;
+		super.age=age;
+		this.uniName=uniName;
+	}
+	
+	
+	public void setUniName(String uniname) {
+		this.uniName = uniname;
+	}
+	
+	public void homeWork() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Checking ...");
+		input.close();
+		
+		
+	}
+	
+	public void goodDay() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Good day");
+		input.close();
+	}
+
+}

@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+
+
+public abstract class Person{
+
+	protected String fName;
+	protected String lName;
+	protected int age;
+	protected int workYears;
+	static int counter=0;
+	
+//	public void count() {
+//		counter++;
+//	}
+	public void getCounter() {
+		System.out.println(counter);
+	}
+	public String getFname() {
+		return fName;
+	}
+	
+	public String getLname() {
+		return lName;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public int getWY() {
+		return workYears;
+	}
+	
+	public void setFName(String fName) {
+		this.fName = fName;
+	}
+	
+	public void setLName(String lName) {
+		this.lName = lName;
+	}
+	
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+	public void setWY (int workYears) {
+		if (workYears>=0){
+			this.workYears = workYears;	
+		}
+		else{
+			System.out.println("WY must be possitive");
+		}
+	}
+	
+	public void homeWork() {
+		
+		System.out.println("Checking HW...");
+		
+		
+		
+	}
+}

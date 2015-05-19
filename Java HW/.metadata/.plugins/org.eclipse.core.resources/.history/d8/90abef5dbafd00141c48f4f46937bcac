@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class Assistant extends Lecturer{
+	
+	Boolean headOrNo;
+	
+	public Assistant(){
+		super();
+		this.headOrNo=false;
+	}
+
+	
+	public void nameHeadOrNo(){
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("My name is "+ getFname()+" "+getLname()+"and I am a head assitant( "+headOrNo+")");
+		input.close();
+	}
+}

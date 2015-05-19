@@ -1,0 +1,43 @@
+
+public class Test {
+
+	public static void main(String[] args) {
+		
+		Teacher bor =new Teacher ("Boris","Gichev",18,5,"BEL");
+		
+		Teacher zor =new Teacher ("Zor","Gizev",18,5,"BEL");
+		
+		Teacher gor =new Teacher ("por1","Gizev",18,-3,"BEL");
+		
+		bor.bye();
+		zor.hello();
+		zor.getCounter();
+		gor.goodDay();
+		
+		Lecturer raz =new Lecturer ("por2","Gizev",18,3,"uasg");
+		
+		raz.hello();
+		
+		zor.getCounter();
+		
+		Professor martinov =new Professor ("por3","Gizev",18,3,"uasg","docent");
+		martinov.titleWorkY();
+		martinov.homeWork();
+		martinov.exam();
+		
+		Assistant kerenchev =new Assistant ("por4","Gizev",18,3,"uasg",false);
+		
+		kerenchev.article();
+		kerenchev.getCounter();
+		kerenchev.nameHeadOrNo();
+		
+		SchoolTeacher zlatko =new SchoolTeacher ("por5","Gizev",18,3,"bel","a3","b4");
+		zlatko.showCla();
+		zlatko.entertain();
+		
+		CollegeTeacher zlatko2 =new CollegeTeacher ("por6","Gizev",18,3,"bel","uasg");
+		zlatko2.getCounter();
+		zlatko2.homeWork();
+	}
+
+}

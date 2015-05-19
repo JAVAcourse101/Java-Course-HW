@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+
+public class Professor extends Lecturer{
+
+	String title;
+	
+	public Professor(){
+		super();
+		this.title="no title";
+	}
+	
+	
+	
+	public void titleWorkY(){
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("My title is "+ title+"and i have "+super.workYears+" work experience");
+		input.close();
+	}
+}

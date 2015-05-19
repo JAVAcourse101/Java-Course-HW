@@ -1,0 +1,6 @@
+
+public class Lecturer extends Person {
+	
+	String uniName;
+
+}

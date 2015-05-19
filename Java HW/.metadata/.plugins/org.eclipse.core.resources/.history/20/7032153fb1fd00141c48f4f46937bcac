@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+
+public class Teacher extends Person implements Hello{
+	
+	String Subject;
+	
+	public Teacher(){
+		setFName("no fname");
+		setLName("no lname");
+		setWY(0);
+		setAge(0);
+		setSubject("no subject");
+	}
+	
+	public Teacher(String fName,String lName,int age,int workY,String subject){
+		super.fName=fName;
+		super.lName=lName;
+		super.workYears=workY;
+		super.age=age;
+		this.Subject=subject;
+	}
+	
+	public void setSubject(String subject){
+		this.Subject=subject;
+	}
+	
+	public void goodDay() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Good day");
+		input.close();
+	}
+	
+	
+	public void bye() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Bye");
+		input.close();
+	}
+
+	
+	public void hello() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Bye");
+		input.close();
+		
+		
+	}
+
+
+}

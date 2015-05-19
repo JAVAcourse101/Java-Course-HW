@@ -1,0 +1,23 @@
+
+public class SchoolTeacher extends Teacher{
+	
+	public String cla [] = new String[5];
+	
+	public SchoolTeacher(){
+		super();
+		
+		public cla(){
+			cla[0] = "a1";
+			cla[1] = "a2";
+			cla[2] = "a3";
+			cla[3] = "a3";
+			cla[4] = "a3";
+		}
+	}
+	
+	
+
+//	public void setClasses(String a1,String a2,){
+//		this.subject=subject;
+//	}
+}

@@ -1,0 +1,12 @@
+
+public class CollegeTeacher extends Teacher{
+	String col;
+	
+	
+	
+	public CollegeTeacher(){
+		super();
+		this.col="no college";
+	}
+
+}

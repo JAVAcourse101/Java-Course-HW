@@ -1,0 +1,7 @@
+
+public interface Exercise {
+
+	public void ex(int duration);
+	public void ex(int duration, int girls);
+	public void ex(int duration, int girls,int boys);
+}

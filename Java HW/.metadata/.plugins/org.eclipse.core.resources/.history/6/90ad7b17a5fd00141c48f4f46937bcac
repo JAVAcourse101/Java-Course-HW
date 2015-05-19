@@ -1,0 +1,16 @@
+
+public class Teacher extends Person{
+	
+	String Subject;
+	
+	public Teacher(){
+		setFName("no fname");
+		setLName("no lname");
+		setWY(0);
+		setAge(0);
+		
+	}
+	
+	
+
+}

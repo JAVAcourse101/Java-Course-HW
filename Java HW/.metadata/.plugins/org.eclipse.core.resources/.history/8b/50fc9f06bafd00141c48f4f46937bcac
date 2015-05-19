@@ -1,0 +1,106 @@
+
+
+
+public class SchoolTeacher extends Teacher{
+	
+	public String cla [] = new String[5];
+	
+	public SchoolTeacher(){
+		super();
+		cla[0]="no class";
+		cla[1]="no class";
+		cla[2]="no class";
+		cla[3]="no class";
+		cla[4]="no class";
+	}
+	
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject,String a,String b,String c,String d,String e){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+		cla[0]=a;
+		cla[1]=b;
+		cla[2]=c;
+		cla[3]=d;
+		cla[4]=e;
+		
+	}
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject,String a,String b,String c,String d){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+		cla[0]=a;
+		cla[1]=b;
+		cla[2]=c;
+		cla[3]=d;
+		
+		
+	}
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject,String a,String b,String c){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+		cla[0]=a;
+		cla[1]=b;
+		cla[2]=c;
+		
+		
+	}
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject,String a,String b){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+		cla[0]=a;
+		cla[1]=b;	
+	}
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject,String a){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+		cla[0]=a;
+	}
+	
+	public SchoolTeacher(String fName,String lName,int age,int workY,String subject){
+		setFName(fName);
+		setLName(lName);
+		setWY(workY);
+		setAge(age);
+		setSubject(subject);
+		counter++;
+	}
+	
+	
+	public void showCla() {
+		
+		for(int i=0;1<=4;i++){
+			System.out.println(cla[i]+"|");
+		}
+	}
+	public void entertain() {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Entertaining children ...");
+		input.close();
+		
+		
+	}
+}
