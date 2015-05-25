@@ -1,0 +1,22 @@
+import java.util.Random;
+
+
+public class Wow {
+
+	public static void main(String[] args) {
+		
+		
+		
+	
+		
+
+	}
+	
+	
+	
+	public static void greet(String name){
+		System.out.println("Greeting, " +name);
+	}
+	
+}
+

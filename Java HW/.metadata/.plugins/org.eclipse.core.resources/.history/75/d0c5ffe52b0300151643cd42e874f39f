@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+import java.util.Arrays;
+public class permutation {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter a number \"N\" and we will print all permutations from 1,2,3 to N ");
+		int len=input.nextInt();
+		
+		
+		int[] arr = new int[len];
+		for (int i = 0; i < len; i++) {
+		    arr[i] = i + 1;
+		}
+		
+		String newArr=Arrays.toString(arr);
+		System.out.println(newArr);
+		
+		doPermutation("", newArr); 
+		
+		input.close();
+	}
+
+	
+	private static void doPermutation(String prefix, String str) {
+	    int n = str.length();
+
+	    if (n == 0){
+	    	System.out.println(prefix);
+	    }
+	    else {
+	        for (int i = 0; i < n; i++){
+	        	doPermutation(prefix + str.charAt(i), str.substring(0, i) + str.substring(i+1, n));
+	        }
+	    }
+	    
+	   }
+}

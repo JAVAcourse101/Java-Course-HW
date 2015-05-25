@@ -1,0 +1,23 @@
+
+public class inClass1 {
+
+	public static void main(String[] args) {
+		
+		printInts(1,5,8,8,1,6);
+		
+		
+
+	}
+	
+	public static void printInts(int... words) {
+//	    int lenght = printInts(lenght);
+		
+		for (int word : words) {
+	        System.out.print(word + " ");
+	        return;
+	    }
+	    
+	    System.out.println();
+	}
+
+}

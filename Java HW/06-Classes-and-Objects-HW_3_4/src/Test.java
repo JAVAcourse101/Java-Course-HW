@@ -17,20 +17,20 @@ public class Test {
 		boolean mark1=false;
 		
 		while (mark1==false){
-			
+			input.nextLine();
 			System.out.println("Plesase enter type of product you want to add in this store (Bev,Des,Fruit,Meat,Veg)\nOr type Remove to mark a product as missing");
             String type=input.nextLine();
             
-//            if (type.equals("Remove")){
-//            	mark1=true;
-//            	
-//            	System.out.println("There are "+Stock.getstockCount()+" products which one do you want to remove");
-//            	int b=input.nextInt();
-//            	product.set(false, b);
-//            	
-//            	
-//            	
-//            }
+            if (type.equals("Remove")){
+            	mark1=true;
+            	
+            	System.out.println("There are "+Stock.getstockCount()+" products which one do you want to remove");
+            	int b=input.nextInt();
+            	product.set(false, b);
+            	
+            	
+            	
+            }
             
 			product.add(type);
 		
