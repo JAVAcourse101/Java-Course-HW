@@ -1,0 +1,9 @@
+1Computer programming (often shortened to programming) is a process that leads from an original 
+3activities such as analysis, developing understanding, generating algorithms, verification 
+5implementation (commonly referred to as coding[1][2]) of algorithms in a target programming 
+7JavaScript, Lisp, Python, Ruby, Smalltalk, etc.). The purpose of programming is to find a 
+9problem. The process of programming thus often requires expertise in many different subjects,
+11
+13of the build system, and management of derived artifacts such as machine code of computer
+15"software development" is used for this larger process with the term "programming", 
+17engineering combines engineering techniques with software development practices.

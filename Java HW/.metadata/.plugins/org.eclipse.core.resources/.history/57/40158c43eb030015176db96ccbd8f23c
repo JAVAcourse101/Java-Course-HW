@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+
+public class brackets {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter a math");
+		String math=input.nextLine();
+		
+		countBra(math);
+	}
+
+	private static void countBra(String math) {
+//		String ones= sen.replaceAll("\\b" + word + "\\b", "1");
+		
+		
+		int index1 = math.indexOf("(");
+		int count1 = 0;
+		
+		while (index1 != -1) {
+		    count1++;
+		    math = math.substring(index1 + 1);
+		    index1 = math.indexOf("(");
+		}
+		System.out.println(count1);
+		
+		
+		int index2 = math.indexOf(")");
+		int count2 = 0;
+		
+		while (index2 != -1) {
+		    count2++;
+		    math = math.substring(index2 + 1);
+		    index2 = math.indexOf(")");
+		}
+		System.out.println(count2);
+	}
+}

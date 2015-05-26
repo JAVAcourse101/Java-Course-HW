@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+
+public class count {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter a sentance");
+		String sen=input.nextLine();
+		
+		System.out.println("Plesase enter a word");
+		String word=input.nextLine();
+		
+
+		
+		countwords(sen,word);
+		input.close();
+
+	}
+
+	
+	private static void countwords(String sen, String word) {
+		int index=0;
+		int len=sen.length()-1;
+		int count=0;
+		
+		for (;index<=len;);{
+		
+		if ((index = sen.indexOf("\\b" + word + "\\b",index))!=-1){
+			count++;
+		}
+		else{
+			System.out.println(count);
+			
+		}
+		}
+	}
+}

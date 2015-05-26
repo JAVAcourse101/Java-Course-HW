@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+
+public class reverse {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter a number \"N\" and we will print all permutations from 1,2,3 to N ");
+		String in=input.nextLine();
+		
+		rev(in);
+		
+
+	}
+
+	
+	public static void rev(String in){
+		int len=in.length();
+		
+        String[] partsClean = in.split("");
+		
+		for (String part : partsClean) {
+			System.out.println(part);
+		}
+		
+	}
+}

@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class upper {
+
+	public static void main(String[] args) {
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter a word");
+		String inWord=input.nextLine();
+		
+		System.out.println("Plesase enter a sentance");
+		String inSentance=input.nextLine();
+		
+		up(inWord,inSentance);
+		
+		input.close();
+	}
+	
+	
+	public static void up(String word, String sen){
+		int len=sen.length()-1;
+		
+		sen.replace("\\ga\\b", word.toUpperCase());
+		String replaced = sen.replace(" "+word, " "+word.toUpperCase() );
+		String replaced1 = replaced.replace(word + " ", +" " );
+		System.out.println(replaced);
+		//It makes it in upper case even if the word is part of a bigger word so it needs proving
+	}
+}

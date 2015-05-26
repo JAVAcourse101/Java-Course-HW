@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+
+public class extract {
+
+	public static void main(String[] args) {
+
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+//		System.out.println("Plesase enter a sentances");
+//		String sentances=input.nextLine();
+		
+		String sentances="test. test1. test2.";
+		String word="apple";
+		
+//		print(sentances,word);
+		
+		String ones= sentances.replaceAll("\\b" + "." + "\\b", "1");
+		System.out.println(ones);
+		
+		String[] parts = ones.split("@");
+		
+		for (String part : parts) {
+			System.out.println(part);
+			
+		}
+		input.close();
+
+	}
+
+	
+//	private static void print(String sen, String word) {
+//		String[] parts = sen.split(".");
+//		
+//		for (String part : parts) {
+//			System.out.println(part);
+//		}
+		
+		
+		
+		
+		
+		
+		//String ones= sen.replaceAll("\\b" + word + "\\b", "1");
+//		
+//		
+//		int index = ones.indexOf("1");
+//		int count = 0;
+//		
+//		while (index != -1) {
+//		    count++;
+//		    ones = ones.substring(index + 1);
+//		    index = ones.indexOf("1");
+//		}
+//		System.out.println("No of *"+word+"* in the sentance is : " + count);
+//	}
+}
