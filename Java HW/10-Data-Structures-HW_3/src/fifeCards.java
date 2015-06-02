@@ -1,0 +1,103 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+
+public class fifeCards {
+
+	public static void main(String[] args) {
+
+		int count = 0;
+		String [] cards = new String[5];
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		ArrayList<String> deck = new ArrayList<String>();
+		
+		deck.add("2");
+		deck.add("3");
+		deck.add("4");
+		deck.add("5");
+		deck.add("6");
+		deck.add("7");
+		deck.add("8");
+		deck.add("9");
+		deck.add("10");
+		deck.add("j");
+		deck.add("q");
+		deck.add("k");
+		deck.add("a");
+		
+		
+		
+		for(;count<=4;){
+			int mark=count+1;
+			System.out.println("Plesase enter card number "+mark+":"); 
+			String card=input.nextLine();
+			
+			String cardL=card.toLowerCase();
+			if (deck.contains(cardL.toLowerCase())){
+				cards[count]=cardL;
+				count++;
+			}
+			
+			else{
+				System.out.println("Plesase enter a valid card"); 
+			}
+			
+		}
+		
+		checkSets(cards);
+		input.close();
+
+	}
+	
+	private static void checkSets(String[] cards) {
+		
+		TreeMap<String, Integer> wordsCount = new TreeMap<String, Integer>();
+				
+		for (String word : cards) {
+			Integer count = wordsCount.get(word);
+			if (count == null) {
+				count = 0; 
+			}
+			wordsCount.put(word, count + 1);
+		}
+		
+		Set<String> wordKeys = wordsCount.keySet();
+		
+		System.out.println();
+		
+		int mark=0;
+		
+		for (String word : wordKeys) {
+			int count = wordsCount.get(word);
+			if (count==1){
+				mark++;
+				}
+			if (count==2){
+				System.out.printf("You hava a pair of %s\n", word);
+			}
+			
+			if (count==3){
+				System.out.printf("You hava a set of %s\n", word);
+			}
+			
+			if (count==4){
+				System.out.printf("You hava a four of a kind of %s\n", word);
+			}
+			
+			if (count==5){
+			System.out.printf("You are a cheater");
+			}
+		}
+		System.out.println();
+		
+		if (mark==5){
+			System.out.printf("You are probably a looser\n");
+
+		}
+		
+	}
+
+}

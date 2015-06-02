@@ -1,0 +1,56 @@
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+
+
+public class fifeCards {
+
+	public static void main(String[] args) {
+
+		int count = 0;
+		String [] cards = new String[4];
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		ArrayList<String> deck = new ArrayList<String>();
+		
+		deck.add("2");
+		deck.add("3");
+		deck.add("4");
+		deck.add("5");
+		deck.add("6");
+		deck.add("7");
+		deck.add("8");
+		deck.add("9");
+		deck.add("10");
+		deck.add("j");
+		deck.add("q");
+		deck.add("k");
+		deck.add("a");
+		
+		
+		
+		for(;count<=4;){
+			int mark=count+1;
+			System.out.println("Plesase enter card number "+mark+":"); 
+			String card=input.nextLine();
+			
+			String cardL=card.toLowerCase();
+			if (deck.contains(cardL.toLowerCase())){
+				cards[count]=cardL;
+				count++;
+			}
+			
+			else{
+				System.out.println("Plesase enter a valid card"); 
+			}
+			
+		}
+		
+		for(String u : cards){
+			System.out.print( u );
+		}
+
+	}
+
+}

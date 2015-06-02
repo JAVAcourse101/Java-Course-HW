@@ -1,0 +1,43 @@
+import java.util.Scanner;
+import java.util.Set;
+import java.util.TreeMap;
+public class uniqueWords {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Plesase enter a text and we will prien onlt the unique words for that text");
+		//Does anyone knows what is love? Love is not  1 a feeling, it is a vortex. Vortex that swallows you and after time it spits you up. 
+		String text=input.nextLine();
+		
+		String noPunctoation = text.replaceAll("[^a-zA-Z ]", "");
+		System.out.println(noPunctoation);
+		
+		separate(noPunctoation);
+	}
+
+	
+	
+	private static String[] separate(String every) {
+		String[] sepWords = every.split("\\ ");
+		
+		int len=sepWords.length;
+		
+//		for(int i =0;i<len;i++){
+//			if (sepWords[i].equals(" ")){
+//				sepWords[i]=null;
+//			}
+//			
+//		}
+		
+		int newLen=sepWords.length;
+		
+		for(int i =0;i<newLen;i++){
+			sepWords[i]=sepWords[i].trim();
+			sepWords[i]=sepWords[i].toLowerCase();
+			System.out.println(sepWords[i]);
+		}
+		return sepWords;
+		
+		
+	}
+}

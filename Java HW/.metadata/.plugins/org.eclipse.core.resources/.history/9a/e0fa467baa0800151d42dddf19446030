@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+
+public class twentyWords {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Plesase enter 20 words and we will tell you the count of each one");
+		System.out.println("(use comma as deliminator)");
+		String everyWord=input.nextLine();
+		
+		separate(everyWord);
+		
+		for (int i=0;i<separate(everyWord).length;i++){
+			System.out.println(separate(everyWord)[i]);
+		}
+		input.close();
+
+	}
+
+	
+	
+	
+	
+	private static String[] separate(String every) {
+		String[] sepWords = every.split("\\.|\\?|\\!");
+		
+		int len=sepWords.length;
+		
+		if (len>20){
+			System.out.println("You have entered "+len+" more words than 20 , please try again.");
+			separate(every);
+		}
+		
+		if (len<20){
+			System.out.println("You have entered only "+len+" words, please try again.");
+			separate(every);
+		}
+		return sepWords;
+	}
+}
