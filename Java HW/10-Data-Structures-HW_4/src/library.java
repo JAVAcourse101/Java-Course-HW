@@ -1,0 +1,62 @@
+
+import java.util.ArrayList;
+
+
+public class library {
+	
+	 private String name;
+	 private String address;
+	 private ArrayList<book> collection = new ArrayList<book>();
+	 
+	 public library(){
+		 this.name="Unnamed";
+		 this.address="Unnamed";
+		 this.collection=null;
+		 
+	 }
+	 
+	 public String getName() {
+		return name;
+	}
+
+	
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public library(String name, String address){
+		 this.name=name;
+		 this.address=address;
+		 
+	 }
+	 
+	
+	 
+	 
+	 
+	 
+	 public void addBook(String tName,String tAuthor,int  tPages) { 
+		 book temp = new book(tName, tAuthor, tPages);
+		 collection.add(temp);
+		 
+		}
+	 
+	 public void seeBook() {
+		 
+		 System.out.println(collection);
+				 
+		 
+	 }
+	 
+	 public void removeBook(int number) {
+		
+		 collection.remove(number-1);
+		 int oldCount=book.getCounter();
+		 int newCount= oldCount-1;
+		 book.setCounter(newCount);
+	 }
+} 
+

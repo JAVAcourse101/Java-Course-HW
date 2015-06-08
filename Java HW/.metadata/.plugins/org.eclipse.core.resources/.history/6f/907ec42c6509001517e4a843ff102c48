@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Let`s create a library. Please enter name"); 
+		String name=input.nextLine();
+		
+		System.out.println("Please enter address"); 
+		String address=input.nextLine();
+
+		library lib = new library (name,address);
+		
+		System.out.println(lib.getAddress());
+		System.out.println(lib.getName());
+		
+	}
+
+}

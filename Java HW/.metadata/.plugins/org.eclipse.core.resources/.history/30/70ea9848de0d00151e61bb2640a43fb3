@@ -1,0 +1,65 @@
+
+import java.util.HashSet;
+import java.util.Scanner;
+
+
+
+public class library {
+	Scanner input = new Scanner(System.in,"UTF-8");
+	
+	 private String name;
+	 private String address;
+	 //TreeMap<book, Integer> collection = new TreeMap<book, Integer>();
+	 private HashSet<book> collection = new HashSet<book>();
+	 
+	 public library(){
+		 this.name="Unnamed";
+		 this.address="Unnamed";
+		 this.collection=null;
+		 
+	 }
+	 
+	 public String getName() {
+		return name;
+	}
+
+	
+
+	public String getAddress() {
+		return address;
+	}
+
+
+
+	public library(String name, String address){
+		 this.name=name;
+		 this.address=address;
+		 
+	 }
+	 
+	
+	 
+	 
+	 
+	 
+	 public void addBook(String tName,String tAuthor,int  tPages) { 
+		 book temp = new book(tName, tAuthor, tPages);
+		 collection.add(temp);
+		 
+		}
+	 
+	 public void seeBook() {
+		 
+		 System.out.println(collection);
+				 
+		 
+	 }
+	 
+	 public void removeBook(int number) {
+		
+		 String removeName=input.nextLine();
+				 
+		 
+	 }
+} 
+
