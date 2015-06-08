@@ -1,0 +1,135 @@
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Scanner;
+import java.util.Stack;
+
+
+public class expression {
+
+	public static void main(String[] args) {
+//		Scanner input = new Scanner(System.in,"UTF-8");
+//		System.out.println("Please an expression like this 9+6+3+4+8+6-7-9-5+5+7"); 
+		String ex="8+3+9+8+6-9-9-5+5+7";
+		
+		checkEx(ex);
+		
+		Queue<Integer> que = new LinkedList<Integer>();
+		Stack<String> sta = new Stack<String>();
+		
+		
+		
+		int len=ex.length();
+		for(int i =0;i<len;i++){
+			
+			if ((i+1)%2!=0){
+				int x = Character.getNumericValue(ex.charAt(i));
+				que.add(x);
+				
+			}
+			if ((i+1)%2==0){
+				String temp=Character.toString(ex.charAt(i));
+				sta.push(temp);
+			}
+
+
+		}
+		while (!que.isEmpty()) {
+			
+			Integer current = que.poll();
+			
+		    System.out.print(current);
+		    System.out.println();
+		    
+		}
+		
+		while(!sta.isEmpty()){
+			
+			String current = sta.pop();
+			
+			System.out.print(current);
+			System.out.println();
+		}
+		
+		Integer digitF = que.poll();
+		Integer digitS = que.poll();
+		String sign = sta.pop();
+		
+		if ((sign.equals("+")==true)){
+			que.offer(digitF+digitS);
+		}
+		
+	    if ((sign.equals("-")==true)){
+	    	que.offer(digitF-digitS);
+		}
+	    
+	    
+	    
+//		while (!que.isEmpty()) {
+//			
+//			Integer digitF = que.poll();
+//			Integer digitS = que.poll();
+//			String sign = sta.pop();
+//			
+//		    System.out.println(digitF);
+//		    System.out.println(digitS);
+//		    System.out.println(sign);
+//		    System.out.println();
+//		    
+//		    
+//		    if ((sign.equals("+")==true)){
+//				que.offer(digitF+digitS);
+//			}
+//			
+//		    if ((sign.equals("-")==true)){
+//		    	que.offer(digitF-digitS);
+//			}
+//		}
+		
+	}
+	
+	
+	
+	
+	
+	
+	public static void checkEx(String ex){
+		int len=ex.length();
+		for(int i =0;i<len;i++){
+			
+			if ((i+1)%2!=0){
+				if(Character.isDigit(ex.charAt(i))==false){
+					int miss=i+1;
+					System.out.println("Your expression has a misstake, symbol number "+miss+" must be a digit between 0-9, try again!");
+					break;
+					
+				}
+				
+			}
+			if ((i+1)%2==0){
+				String temp=Character.toString(ex.charAt(i));
+				Boolean flag=false;
+				
+				
+				if ((temp.equals("+")==true)){
+					flag=true;
+				}
+				if ((temp.equals("-")==true)){
+					flag=true;
+				}
+				
+				if(flag==false){
+				int miss=i+1;
+					System.out.println("Your expression has a misstake, symbol number "+miss+" must be a + or -, try again!");
+					break;	
+				}
+			
+			
+			
+			}
+		
+				
+
+		}
+		
+	}
+}

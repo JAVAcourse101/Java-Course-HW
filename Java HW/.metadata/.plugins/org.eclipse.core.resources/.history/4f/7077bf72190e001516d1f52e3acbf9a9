@@ -1,0 +1,20 @@
+public class deviceFactory {
+	
+	 public device getDevice(String devType){
+		 
+	 if(devType == null){
+		 return null;
+	 }
+	 
+	 if(devType.equalsIgnoreCase("phone")){
+		 return new phone();
+	 }
+//	 else if(devType.equalsIgnoreCase("RECTANGLE")){
+//		 return new Rectangle();
+//	 } 
+//	 else if(devType.equalsIgnoreCase("SQUARE")){
+//		 return new Square();
+//	 }
+	 	return null;
+	 }
+}

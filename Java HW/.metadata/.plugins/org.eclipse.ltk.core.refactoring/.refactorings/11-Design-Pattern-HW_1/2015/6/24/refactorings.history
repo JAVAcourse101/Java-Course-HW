@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;singleObject&apos; to &apos;singleton&apos;&#x0D;&#x0A;- Original project: &apos;11-Design-Pattern-HW_1&apos;&#x0D;&#x0A;- Original element: &apos;singleObject&apos;&#x0D;&#x0A;- Renamed element: &apos;singleton&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Rename similarly named elements&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;singleObject&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;{singleObject.java[singleObject" matchStrategy="1" name="singleton" qualified="false" references="true" similarDeclarations="true" stamp="1433792121098" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,29 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
+
+public class shortherThan3 {
+
+	public static void main(String[] args) {
+		
+		String sen="I am from planet EARTH and I need love";
+		String[] words = sen.split(" ");
+		
+		Queue<String> que = new LinkedList<String>();
+		
+		for(int i=0;i<words.length;i++){
+			if (words[i].length()>=2){
+				que.offer(words[i]);
+			}
+		}
+		
+		while(!que.isEmpty()){
+			
+			String current = que.poll();
+			
+			System.out.println(current);
+		}
+
+	}
+
+}

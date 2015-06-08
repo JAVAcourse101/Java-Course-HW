@@ -1,0 +1,20 @@
+
+public class test {
+
+	public static void main(String a[]){
+        
+        deque test = new deque();
+        test.insertFront("asd");
+//        test.insertRear(45);
+//        test.removeFront();
+//        test.removeFront();
+//        test.removeFront();
+//        test.insertFront(21);
+//        test.insertFront(98);
+//        test.insertRear(5);
+//        test.insertFront(43);
+//        test.removeRear();
+ 
+    }
+
+}

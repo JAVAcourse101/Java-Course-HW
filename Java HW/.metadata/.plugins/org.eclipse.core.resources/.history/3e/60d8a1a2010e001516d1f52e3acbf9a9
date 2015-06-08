@@ -1,0 +1,61 @@
+
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+public class deque {
+ 
+    private List<element> deque = new ArrayList<element>();
+     
+    
+    
+    public void insertFront(element item){
+    	Box<Integer> integerBox = new Box<Integer>();
+        System.out.println("adding at front: "+item);
+        deque.set(0,item);
+        System.out.println(deque);
+    }
+     
+//    public void insertRear(int item){
+//        System.out.println("adding at rear: "+item);
+//        deque.add(item);
+//        System.out.println(deque);
+//    }
+//     
+//    public void removeFront(){
+//        if(deque.isEmpty()){
+//            System.out.println("Deque underflow!! unable to remove.");
+//            return;
+//        }
+//        int rem = deque.remove(0);
+//        System.out.println("removed from front: "+rem);
+//        System.out.println(deque);
+//    }
+//     
+//    public void removeRear(){
+//        if(deque.isEmpty()){
+//            System.out.println("Deque underflow!! unable to remove.");
+//            return;
+//        }
+//        //remove an item from the beginning of the queue
+//        int rem = deque.remove(deque.size()-1);
+//        System.out.println("removed from front: "+rem);
+//        System.out.println(deque);
+//    }
+//     
+//    public int peakFront(){
+//        //gets the element from the front without removing it
+//        int item = deque.get(0);
+//        System.out.println("Element at first: "+item);
+//        return item;
+//    }
+//     
+//    public int peakRear(){
+//        //gets the element from the rear without removing it
+//        int item = deque.get(deque.size()-1);
+//        System.out.println("Element at rear: "+item);
+//        return item;
+//    }
+     
+    
+}

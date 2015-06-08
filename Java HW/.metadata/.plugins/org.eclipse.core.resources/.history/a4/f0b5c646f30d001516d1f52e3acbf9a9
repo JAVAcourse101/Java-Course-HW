@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+
+public class expression {
+
+	public static void main(String[] args) {
+//		Scanner input = new Scanner(System.in,"UTF-8");
+//		System.out.println("Please an expression like this 9+6+3+4+8+6-7-9-5+5+7"); 
+		String ex="53+9+8+6-9-9-5+5+7";
+		
+		checkEx(ex);
+		
+	}
+	
+	public static void checkEx(String ex){
+		int len=ex.length();
+		for(int i =0;i<len;i++){
+			
+			if (i==0){
+				if(Character.isDigit(ex.charAt(i))==false){
+					int miss=i+1;
+					System.out.println("Your expression has a misstake, symbol number "+miss+" must be a digit between 0-9, try again!");
+					break;
+				}
+				
+			}
+			
+			if ((i+1)%2!=0){
+				if(Character.isDigit(ex.charAt(i))==false){
+					int miss=i+1;
+					System.out.println("Your expression has a misstake, symbol number "+miss+" must be a digit between 0-9, try again!");
+					break;
+					
+				}
+				
+			}
+			if ((i+1)%2==0){
+				String temp=Character.toString(ex.charAt(i));
+				Boolean flag=false;
+				
+				
+				if ((temp.equals("+")==true)){
+					flag=true;
+				}
+				if ((temp.equals("-")==true)){
+					flag=true;
+				}
+				
+				if(flag==false){
+				int miss=i+1;
+					System.out.println("Your expression has a misstake, symbol number "+miss+" must be a + or -, try again!");
+					break;	
+				}
+			
+			
+			
+			}
+		
+				
+
+		}
+		
+	}
+}

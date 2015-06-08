@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		deviceFactory devFac = new deviceFactory();
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		
+		System.out.println("Please enter device"); 
+		String type=input.nextLine();
+		
+		System.out.println("Please enter brand"); 
+		String brand=input.nextLine();
+		
+		System.out.println("Please enter model"); 
+		String model=input.nextLine();
+		
+		
+		
+		device dev1 = devFac.getDevice(type,model,brand);
+		dev1.sayAll();
+
+	}
+
+}

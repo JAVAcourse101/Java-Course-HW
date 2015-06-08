@@ -1,0 +1,24 @@
+import java.util.Stack;
+
+
+public class sentance {
+
+	public static void main(String[] args) {
+		String sen="I am from planet EARTH and i need to love";
+		Stack<String> myStack = new Stack<String>();
+		
+		for(int i=0;i<sen.length();){
+			String temp=Character.toString(sen.charAt(i));
+			myStack.push(temp);
+		}
+		
+		while(!myStack.isEmpty()){
+			
+			String current = myStack.pop();
+			
+			System.out.print(current);
+		}
+
+	}
+
+}

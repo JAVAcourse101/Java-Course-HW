@@ -1,0 +1,13 @@
+
+public class phone extends device{
+	
+	public phone(String device,String brand, String model){
+		device.;
+		super.brand="Undefined";
+	}
+	
+	public void sayAll() {
+		System.out.println("I am a phone device.My brand is "+super.getBrand()+" and I`m a model "+super.getModel()+" .");
+	}
+
+}
