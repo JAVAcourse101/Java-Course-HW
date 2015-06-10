@@ -1,0 +1,35 @@
+
+public class alphabetic {
+
+	public static void main(String[] args) {
+		String sen="I am from planet EARTH and I need love, the real thing not the short luv";
+		String[] words = sen.split(" ");
+		
+		
+		
+		String tmp;
+		for (int i = 0;i < words.length;i++)
+		{
+		  tmp = words[i];
+		  for (int j = 0;j < words.length;j++)
+		  {
+		    if (i == j) continue; // Same place.. Nothing to do.
+		    int x = tmp.compareTo(words[j]); // Bigger smaller?!
+		    if (x < 0) // Need to swap.
+		    {
+		      /* Swaping proccess... */
+		      tmp = words[j];
+		      words[j] = words[i];
+		      words[i] = tmp;
+		    }
+		  }
+		}
+		
+		for (int i = 0;i < words.length;i++){
+		    System.out.print(words[i]);
+			System.out.print(" ");
+		}
+
+	}
+
+}

@@ -1,0 +1,105 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Random;
+
+
+public class tenNumbers {
+
+	public static void main(String[] args) {
+		Random random = new Random();
+        int N = 10;
+        int[] sequence = new int[N];
+ 
+        for (int i = 0; i < N; i++){
+        	sequence[i] = Math.abs(random.nextInt(100));
+        }
+        
+        for (int i = 0; i < N; i++){
+        	System.out.print(sequence[i]);
+        	System.out.print(" ");
+        }
+        
+        System.out.println();
+        ArrayList<Integer> even = new ArrayList<Integer>();
+        ArrayList<Integer> odd = new ArrayList<Integer>();
+        
+        
+        for(int i =0;i<sequence.length;i++){
+			
+			if (sequence[i]%2!=0){
+				odd.add(sequence[i]);
+				
+				
+			}
+			if (sequence[i]%2==0){
+				even.add(sequence[i]);
+			}
+
+
+		}	
+        
+        
+        
+        Integer [] oddStr = new Integer[odd.size()];
+        oddStr = odd.toArray(oddStr);
+        
+        int maxValueOdd = maxValue(oddStr);
+        sort(oddStr, maxValueOdd);
+        
+        printSequence(sort(oddStr, maxValueOdd));
+        
+        
+        
+        
+        
+        Integer[] evenStr = new Integer[even.size()];
+        evenStr = even.toArray(evenStr);
+        
+        
+//        for (int i = 0; i < oddStr.length; i++){
+//        	System.out.print(oddStr[i]);
+//        	System.out.print(" ");
+//        }
+//        System.out.println();
+//        
+//        
+//        for (int i = 0; i < evenStr.length; i++){
+//        	System.out.print(evenStr[i]);
+//        	System.out.print(" ");
+//        }
+        
+
+	}
+	
+	static Integer[] sort(Integer[] sequence, Integer maxValue) 
+    {
+        int[] Bucket = new int[maxValue + 1];
+        Integer[] sorted_sequence = new Integer[sequence.length];
+ 
+        for (int i = 0; i < sequence.length; i++)
+            Bucket[sequence[i]]++;
+ 
+        int outPos = 0;
+        for (int i = 0; i < Bucket.length; i++)
+            for (int j = 0; j < Bucket[i]; j++)
+                sorted_sequence[outPos++] = i;
+ 
+        return sorted_sequence;
+    }
+	
+	static Integer maxValue(Integer[] sequence) 
+    {
+        Integer maxValue = 0;
+        for (int i = 0; i < sequence.length; i++)
+            if (sequence[i] > maxValue)
+                maxValue = sequence[i];
+        return maxValue;
+    }
+	
+	static void printSequence(Integer[] sorted_sequence) 
+    {
+        for (int i = 0; i < sorted_sequence.length; i++)
+            System.out.print(sorted_sequence[i] + " ");
+    }
+
+}
