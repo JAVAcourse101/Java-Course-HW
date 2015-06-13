@@ -1,0 +1,17 @@
+public class run extends Thread{
+
+	public void run() {
+		System.out.println("The thread is running");
+		
+		for (int i = 0; i < 50000; i++) {
+			
+			if (i==25000){
+				
+				
+				
+			}
+			System.out.println(i);
+			
+		}
+		
+	}

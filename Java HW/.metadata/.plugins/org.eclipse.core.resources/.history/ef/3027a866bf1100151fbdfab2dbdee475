@@ -1,0 +1,17 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class pool {
+	public static void main(String[] args) {
+		ExecutorService executor = Executors.newFixedThreadPool(5);
+		for (int i = 1; i < 6; i++) {
+			thread1 t1=new thread1("i",i*1000);
+			executor.execute(t1);
+		}
+		executor.shutdown();
+		while (!executor.isTerminated()) {
+		}
+
+		System.out.println("Finished all threads");
+	}
+}

@@ -1,0 +1,46 @@
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+
+public class fileToString {
+
+	public static void main(String[] args){
+		
+		
+		
+		try {
+			read("..\\files\\programming.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
+	public static void read (String path) throws FileNotFoundException,IOException{
+	
+			
+			FileReader fileReader = new FileReader(path);
+			
+			BufferedReader bufferedReader = new BufferedReader(fileReader);
+
+			while (bufferedReader.ready()) {
+					
+				String line = bufferedReader.readLine();
+				System.out.println(line);
+					
+			
+			
+			bufferedReader.close();
+			}
+	}
+
+}
