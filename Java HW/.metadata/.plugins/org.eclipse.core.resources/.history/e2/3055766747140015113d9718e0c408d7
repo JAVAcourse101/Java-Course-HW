@@ -1,0 +1,80 @@
+import java.awt.BorderLayout;
+import java.awt.FlowLayout;
+
+import javax.swing.JButton;
+import javax.swing.JDialog;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JTextField;
+import java.awt.Font;
+
+
+public class addItem extends JDialog {
+	private JTextField formattedPriceField;
+	private JTextField formattedTextFieldPrice;
+	private JTextField formattedAmmountField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		try {
+			addItem dialog = new addItem();
+			dialog.setDefaultCloseOperation(JDialog.DISPOSE_ON_CLOSE);
+			dialog.setVisible(true);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Create the dialog.
+	 */
+	public addItem() {
+		setBounds(100, 100, 450, 300);
+		getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Name:");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblNewLabel.setBounds(40, 33, 46, 25);
+		getContentPane().add(lblNewLabel);
+		
+		JLabel lblPrice = new JLabel("Price:");
+		lblPrice.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblPrice.setBounds(40, 81, 46, 25);
+		getContentPane().add(lblPrice);
+		
+		JLabel lblAmount = new JLabel("Amount:");
+		lblAmount.setFont(new Font("Tahoma", Font.BOLD, 14));
+		lblAmount.setBounds(40, 125, 74, 25);
+		getContentPane().add(lblAmount);
+		
+		formattedPriceField = new JTextField();
+		formattedPriceField.setText("Enter the name here");
+		formattedPriceField.setBounds(134, 34, 200, 24);
+		getContentPane().add(formattedPriceField);
+		formattedPriceField.setColumns(10);
+		
+		formattedTextFieldPrice = new JTextField();
+		formattedTextFieldPrice.setText("Enter the price here");
+		formattedTextFieldPrice.setBounds(134, 81, 200, 25);
+		getContentPane().add(formattedTextFieldPrice);
+		formattedTextFieldPrice.setColumns(10);
+		
+		formattedAmmountField = new JTextField();
+		formattedAmmountField.setText("Enter the amount here");
+		formattedAmmountField.setBounds(134, 125, 200, 25);
+		getContentPane().add(formattedAmmountField);
+		formattedAmmountField.setColumns(10);
+		
+		JButton btnAdd = new JButton("Add");
+		btnAdd.setBounds(40, 211, 89, 23);
+		getContentPane().add(btnAdd);
+		
+		JButton btnCencel = new JButton("Cencel");
+		btnCencel.setBounds(249, 211, 89, 23);
+		getContentPane().add(btnCencel);
+	}
+}

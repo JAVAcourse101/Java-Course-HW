@@ -1,0 +1,16 @@
+import java.sql.Date;
+
+
+public class test {
+	
+	public static void main(String[] args) {
+
+		Date d;
+		
+		d.setDate(12);
+		d.setDate(12);
+
+		
+	
+	}
+}

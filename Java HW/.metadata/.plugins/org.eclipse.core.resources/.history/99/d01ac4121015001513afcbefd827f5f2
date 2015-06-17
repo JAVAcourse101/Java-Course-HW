@@ -1,0 +1,63 @@
+import java.sql.Date;
+
+
+public class Item {
+	private String name;
+	private double price;
+	private Date date;
+	private int day;
+	private int month;
+	private int year;
+	public Item() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Item(String name, double price, Date date) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.date = date;
+		this.day = date.getDay();
+		this.month = date.getMonth();
+		this.day = date.getYear();
+		
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public double getPrice() {
+		return price;
+	}
+
+
+	public int getAmmount() {
+		return ammount;
+	}
+
+
+	public void setAmmount(int ammount) {
+		this.ammount = ammount;
+	}
+
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+	
+	public double getTotal(){
+		return this.price*this.ammount;
+	}
+
+}

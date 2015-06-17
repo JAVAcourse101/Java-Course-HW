@@ -1,0 +1,50 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+
+
+public class App {
+
+	private JFrame frmTest;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					App window = new App();
+					window.frmTest.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public App() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmTest = new JFrame();
+		frmTest.setTitle("My first app");
+		frmTest.setBounds(100, 100, 515, 373);
+		frmTest.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmTest.getContentPane().setLayout(null);
+		
+		JButton btnAdd = new JButton("Add Item");
+		btnAdd.setBounds(10, 283, 106, 40);
+		frmTest.getContentPane().add(btnAdd);
+	}
+}

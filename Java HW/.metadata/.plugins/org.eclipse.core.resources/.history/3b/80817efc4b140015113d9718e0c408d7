@@ -1,0 +1,44 @@
+
+public class Item {
+	private String name;
+	private int price;
+	private double ammount;
+	
+	public Item() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public Item(String name, int price, double ammount) {
+		super();
+		this.name = name;
+		this.price = price;
+		this.ammount = ammount;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public int getPrice() {
+		return price;
+	}
+
+
+	public void setPrice(int price) {
+		this.price = price;
+	}
+	
+	public double getTotal(){
+		return this.price*this.ammount;
+	}
+
+}

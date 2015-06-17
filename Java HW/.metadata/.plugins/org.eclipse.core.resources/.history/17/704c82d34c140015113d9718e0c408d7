@@ -1,0 +1,91 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import java.awt.BorderLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JScrollPane;
+import javax.swing.ScrollPaneConstants;
+import javax.swing.JTable;
+import javax.swing.table.DefaultTableModel;
+
+
+public class App {
+
+	private JFrame frmTest;
+	private JTable table;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					App window = new App();
+					window.frmTest.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public App() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frmTest = new JFrame();
+		frmTest.setTitle("My first app");
+		frmTest.setBounds(100, 100, 515, 373);
+		frmTest.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmTest.getContentPane().setLayout(null);
+		
+		JButton btnAdd = new JButton("Add Item");
+		btnAdd.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				addItem dialog = new addItem();
+				dialog.setModal(true);
+				dialog.setVisible(true);
+				Item item =dialog.getMainItem();
+				if(item==null){
+					return;
+				}
+				else{
+					DefaultTableModel model = (DefaultTableModel) table.getModel();
+					model.addRow(new Object[] { item.getName(),item.getPrice(), item.getAmmount(), item.getTotal() });
+					
+				}
+			}
+		});
+		btnAdd.setBounds(10, 283, 106, 40);
+		frmTest.getContentPane().add(btnAdd);
+		
+		JScrollPane scrollPane = new JScrollPane();
+		scrollPane.setHorizontalScrollBarPolicy(ScrollPaneConstants.HORIZONTAL_SCROLLBAR_NEVER);
+		scrollPane.setBounds(10, 11, 479, 261);
+		frmTest.getContentPane().add(scrollPane);
+		
+//		Object[][] rowData = new Object[0][5];
+//		Object[] columnNames = { "Name", "Barcode", "Price", "Count", "Total Price" };
+		
+		table = new JTable();
+		table.setModel(new DefaultTableModel(
+			new Object[][] {
+			},
+			new String[] {
+				"Name", "Price", "Amount", "Total"
+			}
+		));
+		scrollPane.setViewportView(table);
+	}
+}
