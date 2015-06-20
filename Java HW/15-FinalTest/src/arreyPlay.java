@@ -1,0 +1,59 @@
+
+public class arreyPlay {
+	public arreyPlay() {
+		super();
+	}
+	
+	
+	public int [][] shapeShift(int [] ar, int l){
+		int [][] m = new int [l][l];
+		int row=0;
+		int i=0;
+		
+		do {
+			int col=0;
+			do {
+				m[col][row]=ar[i]*i;
+				i++;
+				col++;
+			}while (col < l);
+		row++;
+		}while (row < l);
+			
+			
+			
+//		for(int r = 0; r < m.length; r++){
+//			for(int c = 0; c < m[r].length; c++){
+//				System.out.print(m[r][c] + " ");
+//		    }
+//			System.out.println();
+//		}
+		
+		return m;
+	 }
+
+	
+	
+	public int [] shapeShift(int [][] ar, int l){
+		
+		int [] m = new int [l*l];
+		int i=0;
+		
+		for(int row = 0; row < ar.length; row++){
+			
+			for(int col = 0; col < ar[row].length; col++){				
+				m[i]=ar[row][col]*i;
+				i++;						
+			}					
+		}	
+		
+		for(int r = 0; r < m.length; r++){
+			
+				System.out.print(m[r] + " ");
+		    
+			System.out.println();
+		}
+		return m;
+	 }
+	
+}

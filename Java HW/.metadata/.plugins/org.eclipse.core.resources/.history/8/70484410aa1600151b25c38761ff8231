@@ -1,0 +1,12 @@
+
+public class arreyPlay {
+	public arreyPlay() {
+		super();
+	}
+	
+	
+	public int [][] shapeShift(int [] arrey, int size){
+		
+//		 System.out.println("Hi I`m a cat. My name is "+name+"and I am "+age+" years old");
+	 }
+}

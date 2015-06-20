@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class test {
+
+	public static void main(String[] args) {
+		
+		arreyPlay  play = new arreyPlay();
+		
+		Scanner input = new Scanner(System.in,"UTF-8");
+		System.out.println("Please tell me what do you want to do? \nEnter 1 if you want to make one dimensional to two dimensional arrey. \nEnter 2 if you want to turn two dimensional to one dimensinal arrey.");
+		int menu = input.nextInt();
+		
+		
+		System.out.println("Please enter the lenght of the two dimensional arrey, whole number between 2 and 9");
+		int size = input.nextInt();
+//		if{
+//			
+//		}
+	}
+
+}
