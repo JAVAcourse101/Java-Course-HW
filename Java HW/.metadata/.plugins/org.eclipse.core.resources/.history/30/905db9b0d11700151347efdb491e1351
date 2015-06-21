@@ -1,0 +1,21 @@
+import java.util.ArrayList;
+
+
+public class goodNumbers {
+
+	public static void main(String[] args) {
+		int [] a = new int [] {2,7,3,5};
+		int [] b = new int [] {2,7,3,5};
+		
+		int N=20;
+		
+		ArrayList <Integer> num = new ArrayList<Integer>();
+		
+		for (int i=1;i<=N;i++){
+			num.add(i);
+			System.out.print(i+"|");
+		}
+
+	}
+
+}

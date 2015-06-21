@@ -5,16 +5,16 @@ public class permutation {
 
 	public static void main(String[] args) {
 		
-		Scanner input = new Scanner(System.in,"UTF-8");
+//		Scanner input = new Scanner(System.in,"UTF-8");
+//		
+//		System.out.println("Plesase enter a number \"N\" and we will print all permutations from 1,2,3 to N ");
+//		int len=input.nextInt();
 		
-		System.out.println("Plesase enter a number \"N\" and we will print all permutations from 1,2,3 to N ");
-		int len=input.nextInt();
 		
-		
-		int[] arr = new int[len];
-		for (int i = 0; i < len; i++) {
-		    arr[i] = i + 1;
-		}
+		int[] arr = new int[]{2,7,13};
+//		for (int i = 0; i < len; i++) {
+//		    arr[i] = i + 1;
+//		}
 		
 		String newArr=Arrays.toString(arr);
 //		System.out.println(newArr);
@@ -26,7 +26,7 @@ public class permutation {
 //		System.out.println(cleanArr3);
 		doPermutation("", cleanArr3); 
 		
-		input.close();
+//		input.close();
 	}
 
 	

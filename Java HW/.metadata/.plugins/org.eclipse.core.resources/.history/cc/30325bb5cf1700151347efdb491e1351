@@ -1,0 +1,11 @@
+
+public class goodNumbers {
+
+	public static void main(String[] args) {
+		int [] a = new int [] {2,7,3,5};
+		int [] b = new int [] {2,7,3,5};
+		
+
+	}
+
+}

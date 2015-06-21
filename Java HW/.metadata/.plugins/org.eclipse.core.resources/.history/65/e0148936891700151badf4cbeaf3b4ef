@@ -1,0 +1,9 @@
+
+public class sequance {
+
+	public static void main(String[] args) {
+		protected int [] input= new int [10];
+
+	}
+
+}

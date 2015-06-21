@@ -1,0 +1,12 @@
+
+public class goodNumbers {
+
+	public static void main(String[] args) {
+		int [] a = new int [3] {4,7,9,8};
+		int [] b = new int [3];
+		
+//		a = {4,7,9,8};
+
+	}
+
+}

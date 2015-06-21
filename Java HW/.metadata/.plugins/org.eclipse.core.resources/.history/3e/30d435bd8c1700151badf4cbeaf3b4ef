@@ -1,0 +1,12 @@
+import java.util.Random;
+
+
+public class sequance {
+
+	public static void main(String[] args) {
+		 int [] in= new int [10];
+		 Random random = new Random();
+		
+	}
+
+}
