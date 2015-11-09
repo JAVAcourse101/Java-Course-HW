@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+
+public class Four {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter two numbers and we will print them in ascending order");
+		Scanner test= new Scanner(System.in);
+		
+		System.out.println("Please enter the first one:");
+		double a =test.nextDouble();
+		System.out.println("Please enter the second one:");
+		double B =test.nextDouble();
+		
+		if(a>B){
+			System.out.println(B+" ; "+a);
+		}
+		
+		if(a<B){
+			System.out.println(a+" ; "+B);
+		}
+		test.close();
+		
+
+	}
+
+}

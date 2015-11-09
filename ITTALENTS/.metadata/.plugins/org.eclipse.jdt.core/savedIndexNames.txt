@@ -1,0 +1,5 @@
+INDEX VERSION 1.127+C:\Users\Boris\Desktop\ITTALENTS\.metadata\.plugins\org.eclipse.jdt.core
+1290776151.index
+2791608477.index
+376064325.index
+3122258931.index

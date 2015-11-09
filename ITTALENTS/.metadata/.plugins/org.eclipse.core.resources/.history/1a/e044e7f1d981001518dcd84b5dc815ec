@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+
+public class Two {
+	public static void main(String[] args) {
+		System.out.println("Please enter two numbers and we will make some calculations with them.");
+		Scanner test= new Scanner(System.in);
+		
+		System.out.println("Please enter the first one:");
+		double a =test.nextDouble();
+		System.out.println("Please enter the second one:");
+		double b =test.nextDouble();
+		
+		//I tried to fix the wrong results from using double numbers
+		double sum = a + b;
+		double rSum = Math.round(sum*10000000.0)/10000000.0;
+		double Sub = a - b;
+		double rSub = Math.round(Sub*10000000.0)/10000000.0;
+		double Mul = a*b;
+		double rMul = Math.round(Mul*10000000.0)/10000000.0;
+		double Div = a/b;
+		double rDiv = Math.round(Div*10000000.0)/10000000.0;
+		double Lef = a%b;
+		double rLef = Math.round(Lef*10000000.0)/10000000.0;
+		System.out.println("The sum of the numbers is: "+rSum);
+		System.out.println("The subtraction of the numbers is: "+rSub);
+		System.out.println("The multiplication of the numbers is: "+rMul);
+		System.out.println("The division of the numbers is: "+rDiv);
+		System.out.println("The leftover from the division of the numbers is: "+rLef);
+		test.close();
+		
+		
+	}
+}

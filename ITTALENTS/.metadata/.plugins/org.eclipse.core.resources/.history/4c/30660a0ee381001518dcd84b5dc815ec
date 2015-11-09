@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Thirteen {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter a whole number in the range [-100;100]");
+		Scanner sc = new Scanner(System.in);
+		int C = sc.nextInt();
+		sc.close();
+		if (!((C >= -100) && (C <= 100))) {
+
+			System.out.println("Entered value not in range");
+		}
+
+		if ((C >= -100) && (C <= 100)) {
+			if (C < -20) {
+				System.out.println("Ice cold");
+			}
+
+			if ((C >= -20) && (C <= 0)) {
+				System.out.println("Cold");
+			}
+
+			if ((C > 0) && (C <= 15)) {
+				System.out.println("Chilly");
+			}
+
+			if ((C > 15) && (C <= 25)) {
+				System.out.println("Warm");
+			}
+
+			if (C > 25) {
+				System.out.println("Hot");
+			}
+		}
+	}
+
+}

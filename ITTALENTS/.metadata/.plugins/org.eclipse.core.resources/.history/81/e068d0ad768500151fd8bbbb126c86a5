@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ten {
+
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Please enter an array of SEVEN whole numbers.");
+//
+//		int[] arr = new int[7];
+//		System.out
+//				.println("Now let us start entering 7 whole numbers in the array.");
+//
+//		for (int j = 0; j < 7; j++) {
+//			arr[j] = sc.nextInt();
+//
+//		}
+
+		 int[] arr = new int[] { 1, 1, 1, 2, 2, 2,9 };
+		long av = 0;
+		for (int j = 0; j < arr.length; j++) {
+			av += arr[j];
+		}
+		av /=arr.length;
+		System.out.println(av);
+
+	}
+
+}

@@ -1,0 +1,54 @@
+import java.util.Scanner;
+
+public class Eleven {
+
+	public static void main(String[] args) {
+		boolean flag = true;
+
+		while (flag == true) {
+
+			Scanner test = new Scanner(System.in);
+
+			System.out.println("Please enter three digit number without the digit zero");
+			int Num = test.nextInt();
+
+			if ((Num < 100) || (Num > 999)) {
+				System.out.println("Invalid range, please try again");
+				System.out.println();
+				continue;
+			}
+			int newNum = Num;
+
+			int c = Num % 10;
+			Num /= 10;
+			int B = Num % 10;
+			Num /= 10;
+			int A = Num % 10;
+
+			if ((A == 0) || (B == 0) || (c == 0)) {
+				System.out.println("One of your digits is zero, please try again");
+				System.out.println();
+				continue;
+			}
+
+			if (newNum % c == 0) {
+				System.out.println("Your number can be divided by " + c);
+
+			}
+			if (newNum % B == 0) {
+				System.out.println("Your number can be divided by " + B);
+
+			}
+			if (newNum % A == 0) {
+				System.out.println("Your number can be divided by " + A);
+
+			} else {
+				System.out.println("Your number can NOT be divided by neither of the three digits that it is made of!");
+			}
+			test.close();
+			flag = false;
+		}
+
+	}
+
+}

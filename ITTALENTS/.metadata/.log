@@ -1,0 +1,1004 @@
+!SESSION 2015-10-24 23:39:03.278 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-24 23:39:41.458
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-24 23:39:41.464
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-25 00:41:15.949 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.527
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.527
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.543
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.559
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.559
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.559
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.621
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.637
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.652
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.652
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.652
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:41:17.652
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:41:49.000
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:41:49.000
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-25 00:45:55.061 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:46:04.528
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:46:04.544
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.162
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.165
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.181
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.197
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.970
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.985
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.985
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.985
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:15.985
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.001
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.001
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.001
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.001
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.016
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.016
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:48:16.016
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+!SESSION 2015-10-25 00:49:50.467 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.721
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.726
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.729
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.733
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.736
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.739
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.742
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.745
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.748
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.750
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.753
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.756
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.789
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Cpp.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.794
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.HTML.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.797
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Java.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.801
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.JavaProperties.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.803
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.NLsupport_3.1.4.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.806
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker.Xml.NLsupport_3.1.0.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.808
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Cpp_3.1.5.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.810
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Html_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.813
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.JavaProperties_3.1.0.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.815
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Java_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.818
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3.Xml_3.1.1.
+
+!ENTRY org.eclipse.equinox.p2.publisher.eclipse 4 0 2015-10-25 00:49:53.821
+!MESSAGE Unable to acquire PluginConverter service during generation for: C:\eclipse\extensions\espellchecker-3.1.5\eclipse\plugins\com.bdaum.SpellChecker3_3.1.5.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:50:06.845
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:50:06.851
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-25 00:56:21.698 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:56:32.913
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-25 00:56:32.921
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-27 08:58:05.803 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-27 08:58:24.476
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-27 08:58:24.476
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-29 02:34:52.229 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 02:35:25.834
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 02:35:25.834
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-29 19:07:21.405 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 19:07:35.293
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 19:07:35.300
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-29 23:53:45.046 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 23:53:57.261
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-29 23:53:57.267
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-30 23:01:39.551 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-30 23:01:53.001
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-30 23:01:53.001
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-10-31 20:53:54.133 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-31 20:54:34.032
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-10-31 20:54:34.048
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-01 11:53:57.819 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-01 11:54:13.484
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-01 11:54:13.484
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2015-11-01 12:32:33.833
+!MESSAGE Save All Failed
+
+!ENTRY org.eclipse.ui 2 0 2015-11-01 12:32:33.833
+!MESSAGE Save All Failed
+!STACK 0
+java.lang.IllegalArgumentException: Attempted to beginRule: L/LessonThree/src/twenty.java, does not match outer scope rule: org.eclipse.ui.console.TextConsole$MatcherSchedulingRule@62a41f68
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:333)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:85)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:75)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:65)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:456)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:772)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5076)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.performSave(CompilationUnitEditor.java:1247)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSave(CompilationUnitEditor.java:1301)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.doSave(AbstractTextEditor.java:7209)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:216)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:355)
+	at org.eclipse.ui.internal.SaveablesList$3.run(SaveablesList.java:625)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:283)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:291)
+	at org.eclipse.ui.internal.SaveablesList.saveModels(SaveablesList.java:634)
+	at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3750)
+	at org.eclipse.ui.ide.IDE$1.run(IDE.java:1258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1247)
+	at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.doSave(SaveScopeResourcesHandler.java:257)
+	at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.handleStatus(SaveScopeResourcesHandler.java:211)
+	at org.eclipse.debug.internal.ui.sourcelookup.Prompter$1.run(Prompter.java:72)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:128)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:955)
+	at org.eclipse.ui.internal.console.IOConsolePartitioner$TrimJob.runInUIThread(IOConsolePartitioner.java:632)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 4 2015-11-01 12:32:50.409
+!MESSAGE Save All Failed
+
+!ENTRY org.eclipse.ui 2 0 2015-11-01 12:32:50.409
+!MESSAGE Save All Failed
+!STACK 0
+java.lang.IllegalArgumentException: Attempted to beginRule: L/LessonThree/src/twenty.java, does not match outer scope rule: org.eclipse.ui.console.TextConsole$MatcherSchedulingRule@62a41f68
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:63)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:134)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:333)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:85)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:290)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:118)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2251)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2308)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:118)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:75)
+	at org.eclipse.ui.internal.editors.text.WorkspaceOperationRunner.run(WorkspaceOperationRunner.java:65)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.executeOperation(TextFileDocumentProvider.java:456)
+	at org.eclipse.ui.editors.text.TextFileDocumentProvider.saveDocument(TextFileDocumentProvider.java:772)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.performSave(AbstractTextEditor.java:5076)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.performSave(CompilationUnitEditor.java:1247)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSave(CompilationUnitEditor.java:1301)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$TextEditorSavable.doSave(AbstractTextEditor.java:7209)
+	at org.eclipse.ui.Saveable.doSave(Saveable.java:216)
+	at org.eclipse.ui.internal.SaveableHelper.doSaveModel(SaveableHelper.java:355)
+	at org.eclipse.ui.internal.SaveablesList$3.run(SaveablesList.java:625)
+	at org.eclipse.ui.internal.SaveableHelper$5.run(SaveableHelper.java:283)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.ui.internal.SaveableHelper.runProgressMonitorOperation(SaveableHelper.java:291)
+	at org.eclipse.ui.internal.SaveablesList.saveModels(SaveablesList.java:634)
+	at org.eclipse.ui.internal.Workbench.saveAll(Workbench.java:3750)
+	at org.eclipse.ui.ide.IDE$1.run(IDE.java:1258)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.ide.IDE.saveAllEditors(IDE.java:1247)
+	at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.doSave(SaveScopeResourcesHandler.java:257)
+	at org.eclipse.debug.internal.ui.launchConfigurations.SaveScopeResourcesHandler.handleStatus(SaveScopeResourcesHandler.java:211)
+	at org.eclipse.debug.internal.ui.sourcelookup.Prompter$1.run(Prompter.java:72)
+	at org.eclipse.ui.internal.UILockListener.doPendingWork(UILockListener.java:167)
+	at org.eclipse.ui.internal.UILockListener.aboutToWait(UILockListener.java:128)
+	at org.eclipse.core.internal.jobs.LockManager.aboutToWait(LockManager.java:123)
+	at org.eclipse.core.internal.jobs.JobManager.join(JobManager.java:955)
+	at org.eclipse.ui.internal.console.IOConsolePartitioner$TrimJob.runInUIThread(IOConsolePartitioner.java:632)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:97)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2015-11-01 20:54:18.775 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-01 21:10:27.771
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-01 21:10:27.771
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-03 05:10:54.173 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 05:11:07.223
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 05:11:07.225
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-03 06:39:32.494 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 06:39:44.382
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 06:39:44.384
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-03 06:41:35.333 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 06:41:47.846
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-03 06:41:47.848
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-05 02:43:00.742 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-05 02:43:20.632
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-05 02:43:20.634
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-05 22:36:42.737 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-05 22:38:33.870
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-05 22:38:33.870
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.ui 4 10001 2015-11-05 23:06:33.107
+!MESSAGE Internal Error
+!STACK 1
+Java Model Exception: Core Exception [code 3] Some characters cannot be mapped using "Cp1252" character encoding.
+Either change the encoding or remove the characters which are not supported by the "Cp1252" character encoding.
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:50)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:193)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:151)
+	at org.eclipse.jdt.ui.refactoring.RenameSupport.perform(RenameSupport.java:198)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode.doRename(RenameLinkedMode.java:362)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode$EditorSynchronizer.left(RenameLinkedMode.java:119)
+	at org.eclipse.jface.text.link.LinkedModeModel.exit(LinkedModeModel.java:341)
+	at org.eclipse.jface.text.link.LinkedModeUI$4.run(LinkedModeUI.java:1193)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(Unknown Source)
+	at java.nio.charset.CharsetEncoder.encode(Unknown Source)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:366)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:327)
+	at org.eclipse.ltk.core.refactoring.TextFileChange.commit(TextFileChange.java:237)
+	at org.eclipse.ltk.core.refactoring.TextChange.perform(TextChange.java:240)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:223)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	... 41 more
+Caused by: org.eclipse.core.runtime.CoreException: Some characters cannot be mapped using "Cp1252" character encoding.
+Either change the encoding or remove the characters which are not supported by the "Cp1252" character encoding.
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:378)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:327)
+	at org.eclipse.ltk.core.refactoring.TextFileChange.commit(TextFileChange.java:237)
+	at org.eclipse.ltk.core.refactoring.TextChange.perform(TextChange.java:240)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:223)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:193)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:151)
+	at org.eclipse.jdt.ui.refactoring.RenameSupport.perform(RenameSupport.java:198)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode.doRename(RenameLinkedMode.java:362)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode$EditorSynchronizer.left(RenameLinkedMode.java:119)
+	at org.eclipse.jface.text.link.LinkedModeModel.exit(LinkedModeModel.java:341)
+	at org.eclipse.jface.text.link.LinkedModeUI$4.run(LinkedModeUI.java:1193)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+Caused by: java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(Unknown Source)
+	at java.nio.charset.CharsetEncoder.encode(Unknown Source)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:366)
+	... 50 more
+!SUBENTRY 1 org.eclipse.core.filebuffers 4 3 2015-11-05 23:06:33.110
+!MESSAGE Some characters cannot be mapped using "Cp1252" character encoding.
+Either change the encoding or remove the characters which are not supported by the "Cp1252" character encoding.
+!STACK 0
+java.nio.charset.UnmappableCharacterException: Input length = 1
+	at java.nio.charset.CoderResult.throwException(Unknown Source)
+	at java.nio.charset.CharsetEncoder.encode(Unknown Source)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.commitFileBufferContent(ResourceTextFileBuffer.java:366)
+	at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.commit(ResourceFileBuffer.java:327)
+	at org.eclipse.ltk.core.refactoring.TextFileChange.commit(TextFileChange.java:237)
+	at org.eclipse.ltk.core.refactoring.TextChange.perform(TextChange.java:240)
+	at org.eclipse.ltk.core.refactoring.CompositeChange.perform(CompositeChange.java:278)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:258)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:306)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:223)
+	at org.eclipse.jdt.internal.core.BatchOperation.executeOperation(BatchOperation.java:39)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:729)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.jdt.core.JavaCore.run(JavaCore.java:5358)
+	at org.eclipse.jdt.internal.ui.actions.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:106)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:466)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:374)
+	at org.eclipse.ui.internal.WorkbenchWindow$13.run(WorkbenchWindow.java:2157)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2153)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:193)
+	at org.eclipse.jdt.internal.ui.refactoring.RefactoringExecutionHelper.perform(RefactoringExecutionHelper.java:151)
+	at org.eclipse.jdt.ui.refactoring.RenameSupport.perform(RenameSupport.java:198)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode.doRename(RenameLinkedMode.java:362)
+	at org.eclipse.jdt.internal.ui.refactoring.reorg.RenameLinkedMode$EditorSynchronizer.left(RenameLinkedMode.java:119)
+	at org.eclipse.jface.text.link.LinkedModeModel.exit(LinkedModeModel.java:341)
+	at org.eclipse.jface.text.link.LinkedModeUI$4.run(LinkedModeUI.java:1193)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:136)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4147)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3764)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$9.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1032)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:148)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:636)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2015-11-07 17:36:08.142 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-07 17:36:32.902
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-07 17:36:32.902
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-08 17:53:16.794 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-08 17:53:40.308
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-08 17:53:40.308
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2015-11-08 23:29:35.233 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-08 23:29:46.487
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-11-08 23:29:46.487
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Boris'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
