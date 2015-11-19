@@ -8,9 +8,9 @@ public class seventeen {
 				.println("Please enter an array of whole numbers, but for doing that first tell me how long do you want it to be?");
 		int l = sc.nextInt();
 
-		if (l <= 0) {
+		if (l <= 2) {
 			System.out
-					.println("Invalid input, please enter a whole positive number!!!");
+					.println("Invalid input, please enter a whole positive number and bigger than two so that we can check if it edgy!!!");
 			sc.close();
 			return;
 		}
@@ -23,7 +23,7 @@ public class seventeen {
 
 		}
 
-		// int[] arr = new int[] { 3,3, 3, 1, 10, 2, 4, };
+//		 int[] arr = new int[] { 3,1, 3, 1, 10, 2, 4, };
 		boolean isEdgy = true;
 
 		for (int i = 1; i < arr.length - 1; i++) {
@@ -34,10 +34,18 @@ public class seventeen {
 		}
 
 		if (isEdgy == true) {
-			System.out.println("The arrays is edgy");
+			
+			if(arr[0]<arr[1]){
+				System.out.println("The arrays IS UP SIDE edgy ");
+			}
+			
+			if(arr[0]>arr[1]){
+				System.out.println("The arrays IS DOWN SIDE edgy");
+			}
+			
 		}
 		if (isEdgy == false) {
-			System.out.println("The arrays is NOT edgy");
+			System.out.println("The arrays is NOT edgy at all");
 		}
 		sc.close();
 	}

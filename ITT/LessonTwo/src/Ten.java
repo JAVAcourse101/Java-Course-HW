@@ -30,7 +30,14 @@ public class Ten {
 
 			}
 
-			if ((left == 1) || (left == 2)) {
+			if (left == 1)  {
+				System.out.println((times-1) + " times with the bucket of 2 liters");
+				System.out.println((times+1) + " times with the bucket of 3 liters");
+				
+
+			}
+			
+			if (left == 2) {
 				System.out.println(times + " times with the bucket of 2 liters");
 				System.out.println(times + " times with the bucket of 3 liters");
 				System.out.println("And in addition one bucket of 2 liters");
@@ -45,8 +52,8 @@ public class Ten {
 			}
 
 			if (left == 4) {
-				System.out.println(times + 1 + " times with the bucket of 2 liters");
-				System.out.println(times + 1 + " times with the bucket of 3 liters");
+				System.out.println((times + 2) + " times with the bucket of 2 liters");
+				System.out.println(times  + " times with the bucket of 3 liters");
 
 			}
 			test.close();

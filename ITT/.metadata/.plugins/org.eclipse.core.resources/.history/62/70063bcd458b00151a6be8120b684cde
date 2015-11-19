@@ -1,0 +1,62 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_4 {
+
+	public static void main(String[] args) {
+		System.out
+				.println("Please enter two names delimited by comma.");
+		Scanner sc = new Scanner(System.in, "ASCII");
+
+		System.out.println("Please enter the first word");
+		String str = sc.nextLine();
+		str = str.trim();
+		
+		int indexCom=0;
+		
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ',') {
+				indexCom = i;
+				break;
+			}
+		}
+		
+		char[] arr = str.toCharArray();
+		char[] nameOne = new char[indexCom + 1];
+		char[] nameTwo = new char[str.length() - indexCom - 1];
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i < indexCom) {
+				nameOne[i] = arr[i];
+			}
+
+			if (i > indexCom) {
+				nameTwo[i - indexCom - 1] = arr[i];
+			}
+		}
+		
+		String nameOneStr = new String(nameOne);
+		nameOneStr=nameOneStr.trim();
+		
+		String nameTwoStr = new String(nameTwo);
+		nameTwoStr=nameTwoStr.trim();
+		
+		int sumOne=0;
+		for(int i=0;i<nameOneStr.length();i++){
+			sumOne +=nameOneStr.charAt(i);
+					
+		}
+		
+		int sumTwo=0;
+		for(int i=0;i<nameTwoStr.length();i++){
+			sumTwo +=nameTwoStr.charAt(i);
+					
+		}
+		System.out.println(nameOneStr);
+		System.out.println(nameTwoStr);
+		System.out.println(sumOne);
+		System.out.println(sumTwo);
+		
+	}
+
+}

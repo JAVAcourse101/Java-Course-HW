@@ -23,19 +23,20 @@ public class one {
 		}
 		
 		int  minThree= Integer.MAX_VALUE;
-		
+		boolean flag=false;
 		for (int m = 0; m < l; m++) {
 			if((arr[m]%3==0)&&(arr[m]<minThree)){
-				minThree=arr[m];				
+				minThree=arr[m];
+				flag=true;
 			}
 
 		}
 		
-		if(minThree==Integer.MAX_VALUE){
-			System.out.println("Sorry in the entered array there are no numbers that can be divided by three with no leftover");
+		if((minThree==Integer.MAX_VALUE)&&(flag==false)){
+			System.out.println("Sorry in the entered array there are no numbers that can be divided by three with no leftover.");
 		}
 		else{
-			System.out.println("The smallest number in the array that can be devided by three is : "+minThree);
+			System.out.println("The smallest number in the array that can be divided by three is : "+minThree);
 		}
 		sc.close();
 	}

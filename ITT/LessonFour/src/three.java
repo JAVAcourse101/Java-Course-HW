@@ -4,12 +4,12 @@ public class three {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Please enter a number?");
+		System.out.println("Please enter a whole number.");
 		int num = sc.nextInt();
 
 
 		int[] arr = new int[10];
-		System.out.println("Now let us start entering the array.");
+		
 
 		for (int u = 0; u < arr.length; u++) {
 			if (u < 2){
@@ -22,7 +22,7 @@ public class three {
 
 		}
 		for (int b = 0; b < 10; b++) {
-			System.out.print(arr[b] + ", ");
+			System.out.print(arr[b] + " ");
 
 		}
 		sc.close();

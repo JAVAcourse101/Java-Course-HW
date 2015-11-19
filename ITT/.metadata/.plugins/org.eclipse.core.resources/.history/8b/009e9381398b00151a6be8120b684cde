@@ -1,0 +1,74 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Task_1 {
+
+	public static void main(String[] args) {
+		System.out
+				.println("Please enter tho strings delimited by space. Max length of one string is 40 symbols");
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.nextLine();
+
+		str = str.trim();
+		int indexSpace = 0;
+		int countWords = 1;
+
+		for (int i = 0; i < str.length(); i++) {
+			if ((str.charAt(i) == ' ') && (str.charAt(i + 1) != ' ')) {
+				countWords++;
+			}
+			if ((countWords > 2)) {
+				System.out.println("Invalid input try again");
+				sc.close();
+				return;
+
+			}
+		}
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ' ') {
+				indexSpace = i;
+				break;
+			}
+		}
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ' ') {
+				indexSpace = i;
+				break;
+			}
+		}
+
+		System.out.println(indexSpace);
+		char[] arr = str.toCharArray();
+		System.out.println(Arrays.toString(arr));
+
+		char[] wordOne = new char[indexSpace + 1];
+		char[] wordTwo = new char[str.length() - indexSpace - 1];
+
+		for (int i = 0; i < arr.length; i++) {
+			if (i <= indexSpace) {
+				wordOne[i] = arr[i];
+			}
+
+			if (i > indexSpace) {
+				wordTwo[i - indexSpace - 1] = arr[i];
+			}
+		}
+
+		System.out.println(Arrays.toString(wordOne));
+		System.out.println(Arrays.toString(wordTwo));
+
+		String wordO = new String(wordOne);
+		String wordT = new String(wordTwo);
+		wordT = wordT.trim();
+
+		System.out.println(wordO.toUpperCase() + " " + wordO.toLowerCase()
+				+ " " + wordT.toUpperCase() + " " + wordT.toLowerCase());
+		
+		sc.close();
+
+	}
+
+}

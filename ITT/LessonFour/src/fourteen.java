@@ -5,26 +5,9 @@ public class fourteen {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out
-				.println("Please enter an array of real numbers, but for doing that first tell me how long do you want it to be?");
-		int l = sc.nextInt();
 
-		if (l <= 0) {
-			System.out
-					.println("Invalid input, please enter a whole positive number!!!");
-			sc.close();
-			return;
-		}
-
-		double[] arr = new double[l];
-		System.out.println("Now let us start entering the array.");
-
-		for (int q = 0; q < l; q++) {
-			arr[q] = sc.nextDouble();
-
-		}
-
-		// double[] arr = new double[] { 1.2, 2.9, 3.1, 4.5, 5.5 };
+		double[] arr = new double[] { 7.1, 8.5, 0.2, 3.7, 0.99, 1.4, -3.5,
+				-110, 212, 341, 1.2 };
 		int count = 0;
 		int ind = 0;
 		for (int i = 0; i < arr.length; i++) {
@@ -45,7 +28,7 @@ public class fourteen {
 		}
 		sc.close();
 		System.out.println(Arrays.toString(arrN));
-		// System.out.println(count);
+
 	}
 
 }

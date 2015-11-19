@@ -2,20 +2,54 @@ public class seven {
 
 	public static void main(String[] args) {
 
-		int[][] arr = new int[][] { { 48, 72, 13, 14, 15 },
-				{ 21, 22, 53, 24, 75 }, { 31, 57, 33, 34, 35 },
-				{ 41, 95, 43, 44, 45 }, { 59, 52, 53, 54, 55 },
-				{ 61, 69, 63, 64, 65 } };
+		int[][] arr = new int[][] { 
+				{ 11, 12, 13, 14, 15, 16 },
+				{ 31, 32, 33, 34, 35, 36 }, 
+				{ 41, 42, 43, 44, 45, 46 },
+				{ 51, 52, 53, 54, 55, 56 }, 
+				{ 61, 62, 63, 64, 65, 66 } };
+
+		long sumTemp = 0;
+		long sum = 0;
 		
-		int max=arr[0][0];
-		int min=arr[0][0];
-		
-		for (int i = 0; i < arr.length; i++) {
-			for (int j = 0; j < arr[i].length; j++) {
-				System.out.print(arr[i][j] + " ");
+		// The ONE cycle
+		for (int i = 0, j = 0; i < arr.length;) {
+
+			if ((i + j + 2) % 2 == 0) {
+				System.out.print(arr[i][j]);
+				sumTemp += arr[i][j];
+
 			}
-			System.out.println();
+
+			// I made this just to match the output of the task
+			if ((i + j + 2) % 2 != 0) {
+				System.out.print(" ");
+
+			}
+
+			if ((j + 1) != arr[i].length) {
+				System.out.print(",");
+			}
+
+			// And this just to use one cycle
+			if ((j + 1) != arr[i].length) {
+				j++;
+				continue;
+
+			}
+
+			if ((j + 1) == arr[i].length) {
+				System.out.println(" The sum of all elements on this row ("
+						+ (i + 1) + ") with i+j = even number is:" + sumTemp);
+				sum += sumTemp;
+				sumTemp = 0;
+				j = 0;
+				i++;
+			}
+
 		}
+
+		System.out.println("And the total sum is:" + sum);
 	}
 
 }

@@ -24,7 +24,7 @@ public class eight {
 
 		}
 
-		// int[] arr = new int[] { 1, 1, 1, 2, 2, 2, };
+//		 int[] arr = new int[] { 1, 1, 1, 2, 2, 2, 2 };
 		int length = 0;
 		int lengthT = 0;
 		int num = 0;
@@ -54,8 +54,9 @@ public class eight {
 
 		}
 
+		System.out.print("The longest sequence of equal numbers is ");
 		for (int i = 0; i <= length; i++) {
-			System.out.print(num + " ");
+			System.out.print(+num + " ");
 
 		}
 		sc.close();

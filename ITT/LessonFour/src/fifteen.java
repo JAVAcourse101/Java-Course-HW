@@ -23,8 +23,8 @@ public class fifteen {
 
 		}
 
-		// double[] arr = new double[] { 1.2, 2.9, 3.1, 4.5, 5.5, 1.2, -9,
-		// -12.3,11.5 };
+//		 double[] arr = new double[] { 1.2, 2.9, 3.1, 4.5, 5.5, 1.2, -9,
+//		 -12.3,11.5 };
 
 		double max1 = Double.MIN_VALUE;
 		int ind1 = 0;
@@ -99,7 +99,7 @@ public class fifteen {
 			}
 
 		}
-		System.out.println(max1 + ";" + max2 + ";" + max3);
+		System.out.println(max1 + "; " + max2 + "; " + max3);
 		sc.close();
 	}
 }

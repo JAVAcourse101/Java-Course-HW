@@ -1,7 +1,7 @@
 public class five {
 
 	public static void main(String[] args) {
-		int[][] arr = new int[][] { { 1, 2, 3, 4 }, { 5, 6, 7, 8 },
+		int[][] arr = new int[][] { { 1, 2, 3, 50 }, { 5, 6, 7, 40 },
 				{ 9, 10, 11, 12 }, { 13, 14, 15, 16 } };
 
 		long sumRT = 0;

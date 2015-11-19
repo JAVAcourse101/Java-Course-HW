@@ -1,0 +1,79 @@
+
+import java.util.Scanner;
+
+public class Task_1 {
+
+	public static void main(String[] args) {
+		System.out
+				.println("Please enter two strings delimited by space. Max length of one string is 40 symbols");
+		Scanner sc = new Scanner(System.in);
+
+		String str = sc.nextLine();
+
+		str = str.trim();
+		int indexSpace = 0;
+		int countWords = 1;
+
+		for (int i = 0; i < str.length(); i++) {
+			if ((str.charAt(i) == ' ') && (str.charAt(i + 1) != ' ')) {
+				countWords++;
+			}
+			if ((countWords > 2)) {
+				System.out.println("More than two strings.");
+				sc.close();
+				return;
+
+			}
+		}
+
+//		for (int i = 0; i < str.length(); i++) {
+//			if (str.charAt(i) == ' ') {
+//				indexSpace = i;
+//				break;
+//			}
+//		}
+//
+//		for (int i = 0; i < str.length(); i++) {
+//			if (str.charAt(i) == ' ') {
+//				indexSpace = i;
+//				break;
+//			}
+//		}
+		String[] words = str.split(" ");
+		
+		System.out.println(words[0].toUpperCase() + " " + words[0].toLowerCase()
+				+ " " + words[1].toUpperCase() + " " + words[1].toLowerCase());
+		
+		
+//		char[] arr = str.toCharArray();
+//		char[] wordOne = new char[indexSpace + 1];
+//		char[] wordTwo = new char[str.length() - indexSpace - 1];
+//
+//		for (int i = 0; i < arr.length; i++) {
+//			if (i <= indexSpace) {
+//				wordOne[i] = arr[i];
+//			}
+//
+//			if (i > indexSpace) {
+//				wordTwo[i - indexSpace - 1] = arr[i];
+//			}
+//		}
+//
+//		if (wordOne.length > 40 || wordTwo.length > 40) {
+//			System.out.println("More than 40 symbols in one of the strings.");
+//			sc.close();
+//			return;
+//
+//		}
+//		String wordO = new String(wordOne);
+//		String wordT = new String(wordTwo);
+//		wordT = wordT.trim();
+//
+//		System.out.println(wordO.toUpperCase() + " " + wordO.toLowerCase()
+//				+ " " + wordT.toUpperCase() + " " + wordT.toLowerCase());
+
+		sc.close();
+
+	}
+
+}

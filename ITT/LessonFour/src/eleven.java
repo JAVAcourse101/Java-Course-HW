@@ -25,7 +25,7 @@ public class eleven {
 			}
 
 		}
-		System.out.println("\n" + count + " numbers");
+		System.out.print(" " + count + " numbers");
 		sc.close();
 	}
 

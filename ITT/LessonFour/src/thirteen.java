@@ -6,10 +6,15 @@ public class thirteen {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out
-				.println("Please a whole number and we will turn it it to binary?");
+				.println("Please enter a whole number and we will turn it it to binary?");
 		int num = sc.nextInt();
 		int temp = num;
 		int count = 0;
+		if (temp < 0) {
+			System.out.print("Please enter a positive number!");
+			sc.close();
+			return;
+		}
 
 		if (num == 0) {
 			System.out.println("0");
@@ -39,9 +44,7 @@ public class thirteen {
 			}
 
 		}
-		if (temp < 0) {
-			System.out.print("-");
-		}
+		
 		for (int r = 0; r < arr.length; r++) {
 			System.out.print(arr[r]);
 		}

@@ -1,0 +1,28 @@
+public class Task_6 {
+
+	public static void main(String[] args) {
+		int[][] arrN = { { 4, 1, 3, 4 }, { 4, 1, 3, 4 }, { 4, 1, 3, 4 },
+				{ 4, 1, 3, 4 } };
+
+		boolean is = true;
+
+		for (int i = 0; i < arrN.length; i++) {
+			for (int j = 0; j < arrN[i].length; j++) {
+				if (i % 2 == 0) {
+					for (int m = 0, n = 0; n < arrN[i].length; n++) {
+						if (m % 2 == 0) {
+
+						}
+						System.out.println(arrN[m][n]+" ");
+
+					}
+
+				}
+
+			}
+			System.out.println();
+		}
+
+	}
+
+}

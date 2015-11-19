@@ -41,7 +41,8 @@ public class six {
 			arrN[m] = sc.nextInt();
 
 		}
-
+		// Compare
+		
 		if (arr.length != arrN.length) {
 			System.out
 					.println("The two arrays have DIFFERENT lengths and are NOT EQUAL to one another of course");
