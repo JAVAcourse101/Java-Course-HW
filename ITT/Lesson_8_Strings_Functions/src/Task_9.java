@@ -14,14 +14,14 @@ public class Task_9 {
 
 		word = word.replaceAll("[^-?0-9]+", " ");
 		word = word.trim();
-		System.out.println(word);
+//		System.out.println(word);
 		String[] numsString = word.split(" ");
 
 		int[] nums = new int[numsString.length];
 		int sum = 0;
 		for (int i = 0; i < nums.length; i++) {
 			nums[i] = Integer.parseInt(numsString[i]);
-			System.out.println(nums[i]);
+//			System.out.println(nums[i]);
 			sum += nums[i];
 		}
 

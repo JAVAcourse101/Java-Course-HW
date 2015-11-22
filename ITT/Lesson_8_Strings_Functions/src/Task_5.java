@@ -17,16 +17,51 @@ public class Task_5 {
 		first = first.toLowerCase();
 
 		boolean noMatch = true;
+		boolean noMatchAtAll = true;
+		int indexMax = 0;
+
+		for (int i = 0; i < first.length(); i++) {
+			for (int j = 0; j < second.length(); j++) {
+				if (first.charAt(i) == second.charAt(j) && (j > indexMax)) {
+					indexMax = j;
+					noMatchAtAll = false;
+
+				}
+			}
+		}
+		
+		System.out.println(indexMax);
+		
+		if (noMatchAtAll == true) {
+			System.out.println("Sorry there is now match!");
+			sc.close();
+			return;
+		}
+
 		for (int i = 0; i < first.length(); i++) {
 
-			if (first.charAt(i) == second.charAt(0)) {
-				System.out.println(second);
-				noMatch = false;
-				continue;
+			for (int j = 0; j < second.length(); j++) {
+				if (first.charAt(i) == second.charAt(j)) {
+					for (int k = 0; k < indexMax - j; k++) {
+						System.out.print(" ");
+					}
+					System.out.println(second);
+					noMatch = false;
+					noMatchAtAll = false;
+					break;
+				}
 			}
-			System.out.println(first.charAt(i));
+			if (noMatch) {
+				for (int j = 0; j < indexMax; j++) {
+					System.out.print(" ");
+				}
+				System.out.println(first.charAt(i));
+			}
+			noMatch = true;
+
 		}
-		if (noMatch == true) {
+
+		if (noMatchAtAll == true) {
 			System.out.println("Sorry there is now match");
 		}
 		sc.close();

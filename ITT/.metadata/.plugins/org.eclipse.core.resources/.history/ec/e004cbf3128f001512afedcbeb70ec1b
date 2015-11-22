@@ -1,0 +1,29 @@
+
+public class Task_14 {
+
+	public static void main(String[] args) {
+		System.out.println(fac(-3));
+
+	}
+
+	static Integer fac(int num){
+		
+		
+		if(num==0){
+			return 0;
+		}
+		if(num==1){
+			return 1;
+		}
+		
+		if (num<0) {
+			System.out.println("Please enter a positive number");
+			return null;
+
+		}
+		
+		return num*fac(num-1);
+		
+		
+	}
+}

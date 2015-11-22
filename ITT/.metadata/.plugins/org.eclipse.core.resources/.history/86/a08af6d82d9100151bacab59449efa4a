@@ -1,0 +1,13 @@
+public class Task_9 {
+
+	public static void main(String[] args) {
+		long x = -10;
+		long mark = (1 << 17);
+		long test = (long) Math.pow(2, 17);
+		// boolean test = (mark == 1);
+		
+		System.out.println(test);
+		System.out.println(mark);
+		System.out.println(Long.toBinaryString(mark));
+	}
+}

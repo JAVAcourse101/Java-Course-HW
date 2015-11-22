@@ -1,0 +1,17 @@
+
+public class Task_8 {
+
+	public static void main(String[] args) {
+		int x = 10;
+
+		
+		
+		
+
+		int z = 1&(x<<1);
+
+		System.out.println(z);
+
+	}
+
+}

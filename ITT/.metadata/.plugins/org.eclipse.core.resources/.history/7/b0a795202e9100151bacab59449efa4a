@@ -1,0 +1,19 @@
+public class Task_9 {
+
+	public static void main(String[] args) {
+		long x = 131073;
+		long mark = (1 << 17);
+		
+		
+		long z=((x-mark)>>64)&1;
+		
+		System.out.println(z);
+		long bigger=x -z*(x-mark);
+		
+		System.out.println(bigger);
+		// boolean test = (mark == 1);
+		
+		
+		
+	}
+}

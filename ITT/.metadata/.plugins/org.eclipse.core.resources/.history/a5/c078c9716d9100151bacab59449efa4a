@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Task_3 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter number");
+		int num = sc.nextInt();
+		int numTemp = num;
+		int numRev = 0;
+
+		int digits = 0;
+		int dec=1/10;
+		for (; numTemp > 0; digits++) {
+			numTemp /= 10;
+			dec*=10;
+
+		}
+		numTemp=num;
+		
+		
+		for(int i =0;i<digits;i++){
+			
+			int x=numTemp%10;
+			numTemp/=10;
+		
+			numRev+=x*dec;
+			dec/=10;
+		}
+		
+		System.out.println(numRev);
+
+	}
+}

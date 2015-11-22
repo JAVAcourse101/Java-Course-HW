@@ -1,0 +1,21 @@
+
+public class Task_4 {
+
+	public static void main(String[] args) {
+
+		int a = 3;
+
+		int b = 4;
+
+		int c = 4;
+
+		int d = 3;
+
+		int e = 1;
+
+		
+		int uni=a*(a^b^c^d^e)+b*(a^b^c^d^e)+c*(a^b^c^d^e)+d*(a^b^c^d^e)+e*(a^b^c^d^e);
+		
+		System.out.println(uni);
+	}
+}

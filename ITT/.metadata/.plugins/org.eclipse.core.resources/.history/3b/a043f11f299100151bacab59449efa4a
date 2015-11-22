@@ -1,0 +1,30 @@
+public class Task_10 {
+
+	public static void main(String[] args) {
+		int x = 5;
+
+		int y = 7;
+
+		int z = 3;
+
+		int firstOfX = x&(1<<0);
+		int firstOfY= y&(1<<0);
+		int firstOfZ = z&(1<<0);
+		int firstOfresult = (firstOfX&firstOfY)&(firstOfZ^1);
+		
+		int secondOfX = x&(1<<1);
+		int secondOfY= y&(1<<1);
+		int secondOfZ = z&(1<<1);
+		int secondOfresult = (secondOfX&secondOfY)&(secondOfZ^1);
+		
+	
+	
+	int thirdOfX = x&(1<<2);
+	int thirdOfY= y&(1<<2);
+	int thirdOfZ = z&(1<<2);
+	int thirdOfresult = (thirdOfX&thirdOfY)&(thirdOfZ^(1<<2));
+	System.out.println(thirdOfresult);
+	
+	}
+
+}

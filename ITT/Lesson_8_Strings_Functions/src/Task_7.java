@@ -44,7 +44,7 @@ public class Task_7 {
 		}
 
 		System.out.print(counter + " words and the longest has " + howLong
-				+ " symbols and it is -");
+				+ " symbols and it is :");
 
 		for (int i = index - howLong; i < index; i++) {
 			System.out.print(words.charAt(i));
