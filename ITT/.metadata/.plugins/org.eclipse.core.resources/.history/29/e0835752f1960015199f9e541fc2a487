@@ -1,0 +1,23 @@
+public class Task_02 {
+	public static void main(String[] args) {
+		int[] arr = { 9, 13, 2, 7, 3, 8, 12, 4, 5, 2, 16 };
+		System.out.println(findSmall(arr, arr.length-1));
+	}
+
+	static int findSmall(int[] arr,int num) {
+		if (num == 0) {
+			return arr[0];
+
+		}
+		
+		if (arr[num]>findSmall(arr,num-1)){
+			return findSmall(arr,num-1);
+		}
+		
+		if (arr[num]<findSmall(arr,num-1)) {
+			return arr[num];
+		}
+		
+		return 0;
+	}
+}

@@ -8,6 +8,7 @@
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="if (word.charAt(i)) {"/>
 			<item value="if (month == 2) {"/>
 			<item value="third"/>
 			<item value="int"/>
@@ -15,7 +16,6 @@
 			<item value="x"/>
 			<item value="y"/>
 			<item value="true"/>
-			<item value="indexSpace"/>
 		</list>
 		<list key="replacehistory">
 			<item value="eight"/>

@@ -1,0 +1,57 @@
+import java.util.Scanner;
+
+public class Task_9 {
+
+	public static void main(String[] args) {
+		System.out
+				.println("Please enter a string of letters and digits and we will tell you the sum of the numbers");
+		Scanner sc = new Scanner(System.in);
+		String word = sc.nextLine();
+		word = word.trim();
+		StringBuilder str = new StringBuilder(word);
+
+		for (int i = 0; i < str.length(); i++) {
+			if ((i == str.length() - 1) && (str.charAt(i) == '-')) {
+				str.setCharAt(i, ' ');
+				break;
+			}
+
+			if (!((str.charAt(i) >= '0' && str.charAt(i) <= '9') || ((str
+					.charAt(i) == '-')))) {
+				str.setCharAt(i, ' ');
+			}
+
+		}
+		
+		
+		for (int i = 0; i < str.length()-1; i++) {
+			if ((word.charAt(i) == '-') && (word.charAt(i + 1) == ' ')) {
+				str.setCharAt(i, ' ');
+
+			}
+
+		}
+		
+		while (str.indexOf("  ")>=0){
+			str.delete(str.indexOf("  "), str.indexOf("  "));
+		}
+
+		System.out.println(str);
+
+		// word = word.replaceAll("[^-?0-9]+", " ");
+		// word = word.trim();
+
+		// String[] numsString = word.split(" ");
+		//
+		// int[] nums = new int[numsString.length];
+		// int sum = 0;
+		// for (int i = 0; i < nums.length; i++) {
+		// nums[i] = Integer.parseInt(numsString[i]);
+		// // System.out.println(nums[i]);
+		// sum += nums[i];
+		// }
+		//
+		// System.out.println("The sum is " + sum);
+		sc.close();
+	}
+}
