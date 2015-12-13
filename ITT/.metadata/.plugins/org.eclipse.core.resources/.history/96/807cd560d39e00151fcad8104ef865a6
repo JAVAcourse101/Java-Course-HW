@@ -1,0 +1,24 @@
+package Task_2;
+
+public class CallDemo {
+
+	public static void main(String[] args) {
+		GSM vnuche=new GSM();
+		GSM baba=new GSM();
+		
+		vnuche.model="Nokia";
+		baba.model="Simens";
+		
+		
+		vnuche.insertSimCard("0807615547");
+		System.out.println(vnuche.getSimMobileNumber());
+		
+		baba.insertSimCard("0807615546");
+		System.out.println(baba.getSimMobileNumber());
+		
+		vnuche.call(baba, 9.5);
+
+		System.out.println("The value of all outgoing calls is "+vnuche.getSumForCallOutgoing()+" euro.");
+	}
+
+}

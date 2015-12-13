@@ -1,0 +1,149 @@
+import java.util.Arrays;
+
+//import java.util.Scanner;
+
+public class Coder {
+
+	public static void main(String[] args) {
+		// Scanner sc = new Scanner(System.in);
+		// System.out.println("Please enter a string no spaces and no Z`s please");
+		// String input = sc.next();
+		String input = "voinaimir";
+
+		char[][] key = { { 'I', 'F', 'B', 'X', 'M' },
+				{ 'A', 'O', 'J', 'E', 'T' }, { 'G', 'L', 'R', 'U', 'Q' },
+				{ 'Y', 'N', 'H', 'D', 'V' }, { 'C', 'S', 'P', 'W', 'K' } };
+
+		char[] coded = code(input, key);
+		char[] deCoded = deCode(coded, key);
+
+		System.out.println(Arrays.toString(coded));
+		System.out.println(Arrays.toString(deCoded));
+
+		// for (int i = 0; i < text.length; i++) {
+		// System.out.print(text[i]);
+		// }
+
+	}
+
+	static int[] findChars(char firstChar, char secondChar, char[][] key) {
+
+		int[] coordinates = new int[4];
+		int found = 0;
+		for (int row = 0; row < key.length && found < 2; row++) {
+			for (int col = 0; col < key.length && found < 2; col++) {
+				if (firstChar == key[row][col]) {
+					coordinates[0] = row;
+					coordinates[1] = col;
+					found++;
+				}
+				if (secondChar == key[row][col]) {
+					coordinates[2] = row;
+					coordinates[3] = col;
+					found++;
+				}
+			}
+		}
+		return coordinates;
+	}
+
+	static char[] appendA(char[] text) {
+
+		char[] evenText = new char[text.length + 1];
+
+		for (int i = 0; i < text.length; i++) {
+			evenText[i] = text[i];
+		}
+		evenText[evenText.length - 1] = 'A';
+
+		return evenText;
+
+	}
+
+	static char[] code(String text, char[][] key) {
+
+		text = text.toUpperCase();
+
+		char[] charedText = text.toCharArray();
+
+		boolean isOdd = text.length() % 2 != 0 ? true : false;
+
+		if (isOdd) {
+			charedText = appendA(charedText);
+		}
+
+		char[] codedText = new char[charedText.length];
+
+		for (int i = 0; i < charedText.length; i += 2) {
+			int[] coordinates = findChars(charedText[i], charedText[i + 1], key);
+
+			if (coordinates[0] == coordinates[2]) {
+
+				coordinates[1] = coordinates[1] + 1 < key.length ? coordinates[1] + 1: 0;
+				coordinates[3] = coordinates[3] + 1 < key.length ? coordinates[3] + 1: 0;
+
+				codedText[i] = key[coordinates[0]][coordinates[1]];
+				codedText[i + 1] = key[coordinates[2]][coordinates[3]];
+
+				continue;
+			}
+
+			if (coordinates[1] == coordinates[3]) {
+
+				coordinates[0] = coordinates[0] + 1 < key.length ? coordinates[0] + 1: 0;
+				coordinates[2] = coordinates[2] + 1 < key.length ? coordinates[2] + 1: 0;
+
+				codedText[i] = key[coordinates[0]][coordinates[1]];
+				codedText[i + 1] = key[coordinates[2]][coordinates[3]];
+				continue;
+			}
+
+			codedText[i] = key[coordinates[0]][coordinates[3]];
+			codedText[i + 1] = key[coordinates[2]][coordinates[1]];
+
+		}
+
+		return codedText;
+	}
+
+	static char[] deCode(char[] text, char[][] key) {
+
+		
+
+		char[] charedText = text;
+
+		char[] deCodedText = new char[charedText.length];
+
+		for (int i = 0; i < charedText.length; i += 2) {
+			
+			int[] coordinates = findChars(charedText[i], charedText[i + 1], key);
+
+			if (coordinates[0] == coordinates[2]) {
+
+				coordinates[1] = coordinates[1] - 1 >= 0 ? coordinates[1] - 1: key[0].length-1;
+				coordinates[3] = coordinates[3] - 1 >= 0 ? coordinates[3] - 1: key[0].length-1;
+
+				deCodedText[i] = key[coordinates[0]][coordinates[1]];
+				deCodedText[i + 1] = key[coordinates[2]][coordinates[3]];
+
+				continue;
+			}
+
+			if (coordinates[1] == coordinates[3]) {
+
+				coordinates[0] = coordinates[0] - 1 >= 0 ? coordinates[0] + 1: key.length-1;
+				coordinates[2] = coordinates[2] - 1 >= 0 ? coordinates[2] + 1: key.length-1;
+
+				deCodedText[i] = key[coordinates[0]][coordinates[1]];
+				deCodedText[i + 1] = key[coordinates[2]][coordinates[3]];
+				continue;
+			}
+
+			deCodedText[i] = key[coordinates[0]][coordinates[3]];
+			deCodedText[i + 1] = key[coordinates[2]][coordinates[1]];
+
+		}
+
+		return deCodedText;
+	}
+}

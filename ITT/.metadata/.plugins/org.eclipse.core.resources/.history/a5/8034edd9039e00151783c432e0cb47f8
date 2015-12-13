@@ -1,0 +1,11 @@
+package Task_2;
+
+public class Call {
+	
+	double priceForMinute=0;
+	long caller=0;
+	long receiver=0;
+	int duration=0;
+	
+
+}

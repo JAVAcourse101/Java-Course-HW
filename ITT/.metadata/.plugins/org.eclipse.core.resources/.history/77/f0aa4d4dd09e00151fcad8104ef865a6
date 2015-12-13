@@ -1,0 +1,14 @@
+package Task_2;
+
+public class CallDemo {
+
+	public static void main(String[] args) {
+		GSM vnuche=new GSM();
+		GSM baba=new GSM();
+		
+		vnuche.insertSimCard("0807615547");
+		System.out.println(vnuche.getSimMobileNumber());
+
+	}
+
+}

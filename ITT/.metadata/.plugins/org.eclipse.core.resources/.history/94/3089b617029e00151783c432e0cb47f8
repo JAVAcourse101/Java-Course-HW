@@ -1,0 +1,26 @@
+package Task_2;
+
+public class GSM {
+	String model = "";
+	boolean hasSimCard = false;
+	String simMobileNumber = "";
+	long outgoingCallsduration = 0;
+	long lastIncomingCall = 0;
+	long lastOutgoingCall = 0;
+
+	void insertSimCard(String simMobileNumber) {
+		boolean allNumbers=true;
+		for (int i = 0; i < simMobileNumber.length(); i++) {
+			if (simMobileNumber.charAt(i)>'9'||simMobileNumber.charAt(i)<'0') {
+				allNumbers=false;
+			}
+		}
+		if (allNumbers==true&&simMobileNumber.startsWith("08") && simMobileNumber.length() == 10) {
+			this.simMobileNumber = simMobileNumber;
+			this.hasSimCard = true;
+		}
+		else{
+			System.out.println("Not valid number");
+		}
+	}
+}

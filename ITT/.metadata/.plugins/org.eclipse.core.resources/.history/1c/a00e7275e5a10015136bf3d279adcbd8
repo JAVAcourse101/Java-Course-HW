@@ -1,0 +1,123 @@
+import java.util.Scanner;
+
+public class TicTacToe {
+
+	static void printBoardWithCoordinates(char[][] board) {
+		System.out.println("  1 2 3");
+		for (int i = 0; i <= 2; i++) {
+			System.out.print((i + 1) + "|");
+			for (int j = 0; j <= 2; j++) {
+				System.out.print(board[i][j] + "|");
+			}
+			System.out.println();
+		}
+	}
+
+	static boolean fillChar(int x, int y, char board[][], char player) {
+		if (x < 0 || x > 3 || y < 0 || y > 3) {
+			System.out.println("Invalid coordinates try again");
+			return false;
+		}
+		if (board[x][y] != ' ') {
+			System.out.println("Not empty coordinates try again");
+			return false;
+		}
+		board[x][y] = player;
+		return true;
+	}
+
+	static boolean somebodyHasWon(char board[][], char player) {
+		if ((board[0][0] == player && board[0][1] == player && board[0][2] == player)
+				|| (board[1][0] == player && board[1][1] == player && board[1][2] == player)
+				|| (board[2][0] == player && board[2][1] == player && board[2][2] == player)
+				|| (board[0][0] == player && board[1][0] == player && board[2][0] == player)
+				|| (board[0][1] == player && board[1][1] == player && board[2][1] == player)
+				|| (board[0][2] == player && board[1][2] == player && board[2][2] == player)
+				|| (board[0][0] == player && board[1][1] == player && board[2][2] == player)
+				|| (board[2][0] == player && board[1][1] == player && board[0][2] == player)) {
+
+			return true;
+
+		}
+		return false;
+
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		char[][] board = new char[3][3];
+		for (int i = 0; i <= 2; i++) {
+
+			for (int j = 0; j <= 2; j++) {
+				board[i][j] = ' ';
+			}
+
+		}
+
+		System.out
+				.println("Welcome to tic tac toe! \nHere is the empty field with it`s coordinates to help you play.");
+		printBoardWithCoordinates(board);
+		for (int i = 1; i <= 4;) {
+			int x1, x2, y1, y2;
+			// do {
+
+			do {
+
+				System.out.println("Please input the row of the 'X':");
+				x1 = sc.nextInt();
+				System.out.println("Please input the column of the 'X':");
+				y1 = sc.nextInt();
+			} while (fillChar(x1, y1, board, 'X'));
+
+			// System.out.println("Please input the first coordinate for the 'O':");
+			// x2 = sc.nextInt();
+			// System.out.println("Please input the second coordinate for the 'O':");
+			// y2 = sc.nextInt();
+			// } while (x1 < 0 || x1 > 2 || y1 < 0 || y1 > 2 || x2 < 0 || x2 > 2
+			// || y2 < 0 || y2 > 2);
+			//
+			//
+			//
+			// if (board[x1][y1] == 'O' || board[x1][y1] == 'X' || board[x2][y2]
+			// == 'O' || board[x2][y2] == 'X') {
+			// continue;
+			// } else {
+			// fillX(x1,y1,board);
+			//
+			// if (hasXWon(board)) {
+			// System.out.println("The player with the X's has won!");
+			// break;
+			// }
+			//
+			// fillO(x2,y2,board);
+			//
+			// if (hasOWon(board)) {
+			// System.out.println("The player with the O's has won!");
+			// break;
+			// }
+			// }
+			//
+			// i++;
+			// }
+			//
+			// if (!hasXWon(board) && !hasOWon(board)) {
+			// for (int i = 0; i <= 2; i++) {
+			// for (int j = 0; j <= 2; j++) {
+			// if (board[i][j] != 'O' && board[i][j] != 'X') {
+			// fillX(i,j,board);
+			// }
+			// }
+			// }
+			// }
+			//
+			// if (!hasXWon(board) && !hasOWon(board)) {
+			// System.out.println("The game has finished. There is no winner.");
+			// }
+			//
+			// if (hasXWon(board)) {
+			// System.out.println("The player with the X's has won!");
+			// }
+
+		}sc.close();
+	}
+}

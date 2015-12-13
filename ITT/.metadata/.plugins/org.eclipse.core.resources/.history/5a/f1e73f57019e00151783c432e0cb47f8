@@ -1,0 +1,17 @@
+package Task_2;
+
+public class GSM {
+	String model = "";
+	boolean hasSimCard = false;
+	String simMobileNumber = "";
+	long outgoingCallsduration = 0;
+	long lastIncomingCall = 0;
+	long lastOutgoingCall = 0;
+
+	void insertSimCard(String simMobileNumber) {
+		if (simMobileNumber.startsWith("08") && simMobileNumber.length() == 10) {
+			this.simMobileNumber = simMobileNumber;
+			this.hasSimCard = true;
+		}
+	}
+}
