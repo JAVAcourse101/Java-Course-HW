@@ -8,4 +8,13 @@
 <fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.ArrayStoreException"/>
 <fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="Employee"/>
+<fullyQualifiedTypeName name="Task"/>
+<fullyQualifiedTypeName name="Taks_2.Computer"/>
+<fullyQualifiedTypeName name="java.lang.Void"/>
+<fullyQualifiedTypeName name="Task_3.Student"/>
+<fullyQualifiedTypeName name="Task_3.StudentGroup"/>
+<fullyQualifiedTypeName name="Task_01.Person"/>
+<fullyQualifiedTypeName name="Task_01.Student"/>
+<fullyQualifiedTypeName name="Task_01.Employee"/>
 </qualifiedTypeNameHistroy>

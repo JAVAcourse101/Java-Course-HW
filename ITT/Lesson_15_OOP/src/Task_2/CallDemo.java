@@ -6,8 +6,8 @@ public class CallDemo {
 		GSM vnuche = new GSM();
 		GSM baba = new GSM();
 
-		vnuche.model = "Nokia";
-		baba.model = "Simens";
+		vnuche.setModel("Nokia");
+		baba.setModel("Simens");
 
 		vnuche.insertSimCard("0807615547");
 //		System.out.println(vnuche.getSimMobileNumber());

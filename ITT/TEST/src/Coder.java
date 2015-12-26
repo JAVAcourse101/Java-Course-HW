@@ -10,8 +10,10 @@ public class Coder {
 		
 
 		char[][] key = { { 'I', 'F', 'B', 'X', 'M' },
-				{ 'A', 'O', 'J', 'E', 'T' }, { 'G', 'L', 'R', 'U', 'Q' },
-				{ 'Y', 'N', 'H', 'D', 'V' }, { 'C', 'S', 'P', 'W', 'K' } };
+							{ 'A', 'O', 'J', 'E', 'T' },
+							{ 'G', 'L', 'R', 'U', 'Q' },
+							{ 'Y', 'N', 'H', 'D', 'V' },
+							{ 'C', 'S', 'P', 'W', 'K' } };
 
 		String coded = code(input, key);
 		
