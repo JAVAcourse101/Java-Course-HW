@@ -34,15 +34,7 @@ public class TicTacToe {
 			numberOfSpaces[lineNumber] = countSpaces;
 			countSpaces = 0;
 
-			if (countX > maxX) {
-
-				maxX = countX;
-				maxXLine = lineNumber;
-
-			}
-			countX = 0;
-
-			if (countO > maxO) {
+			if (countO > maxO && numberOfSpaces[lineNumber] >= 1 && countX == 0) {
 
 				maxO = countO;
 				maxOLine = lineNumber;
@@ -50,6 +42,15 @@ public class TicTacToe {
 			}
 
 			countO = 0;
+
+			if (countX > maxX && numberOfSpaces[lineNumber] >= 1) {
+
+				maxX = countX;
+				maxXLine = lineNumber;
+
+			}
+			countX = 0;
+
 			lineNumber++;
 
 		}
@@ -72,7 +73,15 @@ public class TicTacToe {
 			numberOfSpaces[lineNumber] = countSpaces;
 			countSpaces = 0;
 
-			if (countX > maxX) {
+			if (countO > maxO && numberOfSpaces[lineNumber] >= 1 && countX == 0) {
+
+				maxO = countO;
+				maxOLine = lineNumber;
+
+			}
+			countO = 0;
+
+			if (countX > maxX && numberOfSpaces[lineNumber] >= 1) {
 
 				maxX = countX;
 				maxXLine = lineNumber;
@@ -80,13 +89,6 @@ public class TicTacToe {
 			}
 			countX = 0;
 
-			if (countO > maxO) {
-
-				maxO = countO;
-				maxOLine = lineNumber;
-
-			}
-			countO = 0;
 			lineNumber++;
 
 		}
@@ -109,7 +111,16 @@ public class TicTacToe {
 		numberOfSpaces[lineNumber] = countSpaces;
 		countSpaces = 0;
 
-		if (countX > maxX) {
+		if (countO > maxO && numberOfSpaces[lineNumber] >= 1 && countX == 0) {
+
+			maxO = countO;
+			maxOLine = lineNumber;
+
+		}
+
+		countO = 0;
+
+		if (countX > maxX && numberOfSpaces[lineNumber] >= 1) {
 
 			maxX = countX;
 			maxXLine = lineNumber;
@@ -117,13 +128,6 @@ public class TicTacToe {
 		}
 		countX = 0;
 
-		if (countO > maxO) {
-
-			maxO = countO;
-			maxOLine = lineNumber;
-
-		}
-		countO = 0;
 		lineNumber++;
 
 		for (int row = 0, col = 2; col >= 0; col--, row++) {
@@ -144,7 +148,16 @@ public class TicTacToe {
 		numberOfSpaces[lineNumber] = countSpaces;
 		countSpaces = 0;
 
-		if (countX > maxX) {
+		if (countO > maxO && numberOfSpaces[lineNumber] >= 1 && countX == 0) {
+
+			maxO = countO;
+			maxOLine = lineNumber;
+
+		}
+
+		countO = 0;
+
+		if (countX > maxX && numberOfSpaces[lineNumber] >= 1) {
 
 			maxX = countX;
 			maxXLine = lineNumber;
@@ -152,45 +165,164 @@ public class TicTacToe {
 		}
 		countX = 0;
 
-		if (countO > maxO) {
+//		System.out.println(Arrays.toString(numberOfSpaces));
+//		System.out.println("Max O" + maxO);
+//		System.out.println("Max O line " + maxOLine);
+//		System.out.println("Max X" + maxX);
+//		System.out.println("Max X line " + maxXLine);
 
-			maxO = countO;
-			maxOLine = lineNumber;
+		// special cases
+		if (board[1][1] == ' ') {
+			fillChar(1, 1, board, 'O');
+			return;
 
 		}
-		countO = 0;
-		
-		if (maxX == 2&&numberOfSpaces[maxXLine]==1) {
-			if (maxXLine > -1 && maxXLine < 3) {
-				findEmptyAndFillCRU(board,maxXLine);
-			}
+
+		if (board[2][2] == ' ' && board[2][1] == 'X' && board[1][2] == 'X') {
+			fillChar(2, 2, board, 'O');
+			return;
+
 		}
-		System.out.println(Arrays.toString(numberOfSpaces));
+
+		if (board[2][0] == ' ' && board[1][0] == 'X' && board[2][1] == 'X') {
+			fillChar(2, 0, board, 'O');
+			return;
+
+		}
+
+		if (board[0][2] == ' ' && board[0][1] == 'X' && board[1][2] == 'X') {
+			fillChar(0, 2, board, 'O');
+			return;
+
+		}
+
+		// normal cases
+		if (maxO == 2 && numberOfSpaces[maxOLine] == 1) {
+			findEmptyAndFillCPU(board, maxOLine);
+			return;
+
+		}
+
+		if (maxX == 2 && numberOfSpaces[maxXLine] == 1) {
+			findEmptyAndFillCPU(board, maxXLine);
+			return;
+
+		}
+
+		if (maxO == 1 && numberOfSpaces[maxOLine] >= 1) {
+			findEmptyAndFillCPU(board, maxOLine);
+			return;
+
+		}
+
+		if (maxO == 0 && numberOfSpaces[maxOLine] >= 1) {
+			findEmptyAndFillCPU(board, maxOLine);
+			return;
+
+		}
+		if (maxX == 1 && numberOfSpaces[maxXLine] >= 1) {
+			findEmptyAndFillCPU(board, maxXLine);
+			return;
+
+		}
 
 	}
 
-	static void findEmptyAndFillCRU(char[][] board, int line) {
+	static void findEmptyAndFillCPU(char[][] board, int line) {
 		switch (line) {
 
 		case 0:
-			
-				for (int col = 0,row = 0; col < board.length; col++) {
-					if (board[row][col] == ' ') {
-						fillChar(row, col, board, 'O');
 
-					}
+			for (int col = 0, row = 0; col < board.length - 1; col++) {
+
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+				}
+				if (board[row][board[row].length - 1] == ' ') {
+					fillChar(row, board[row].length - 1, board, 'O');
+					break;
+				}
+
+			}
+			break;
+
+		case 1:
+			for (int col = 0, row = 1; col < board.length; col++) {
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
 
 				}
 
-			
-			
-		case 1:
+			}
+			break;
 		case 2:
+			for (int col = 0, row = 2; col < board.length; col++) {
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+
+			}
+			break;
 		case 3:
+			for (int col = 0, row = 0; col < board.length - 1; row++) {
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+				if (board[board.length - 1][col] == ' ') {
+					fillChar(board.length - 1, col, board, 'O');
+					break;
+
+				}
+
+			}
+			break;
 		case 4:
+			for (int col = 1, row = 0; col < board.length; row++) {
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+
+			}
+			break;
 		case 5:
+			for (int col = 2, row = 0; col < board.length; row++) {
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+
+			}
+			break;
 		case 6:
+			for (int col = 0, row = 0; col < board[0].length; col++, row++) {
+
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+			}
+			break;
+
 		case 7:
+			for (int row = 0, col = 2; col >= 0; col--, row++) {
+
+				if (board[row][col] == ' ') {
+					fillChar(row, col, board, 'O');
+					break;
+
+				}
+			}
+			break;
 		}
 	}
 
@@ -268,30 +400,28 @@ public class TicTacToe {
 				y1 = sc.nextInt();
 			} while (!fillChar(x1 - 1, y1 - 1, board, player));
 
-			printBoardWithCoordinates(board);
-
 			if (somebodyHasWon(board, player)) {
+				printBoardWithCoordinates(board);
 				break;
 			}
-			// player = player == 'X' ? 'O' : 'X';
 			moves++;
 
 			cPU(board);
 
-			printBoardWithCoordinates(board);
-
-			if (somebodyHasWon(board, player)) {
+			if (somebodyHasWon(board, 'O')) {
+				printBoardWithCoordinates(board);
 				break;
 			}
-
+			printBoardWithCoordinates(board);
 			moves++;
 
 			if (moves == (board.length * board.length - 1)) {
 
-				for (int i = 0; i < board.length; i++) {
+				outside: for (int i = 0; i < board.length; i++) {
 					for (int j = 0; j < board.length; j++) {
 						if (board[i][j] == ' ') {
 							fillChar(i, j, board, player);
+							break outside;
 						}
 					}
 				}
