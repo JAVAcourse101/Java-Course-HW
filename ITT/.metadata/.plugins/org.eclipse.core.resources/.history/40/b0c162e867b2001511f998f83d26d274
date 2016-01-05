@@ -1,0 +1,41 @@
+package War;
+
+public class Deck {
+	
+	private Card[] cards;
+	
+	Deck (){
+		this.cards=new Card[52];
+	}
+	
+	
+	public void generateFullDeck(){
+		char startChar='1';
+		String [] numbers={"10","J","Q","K","A"};
+		String[] suits={"Clubs","Diamonds","Hearts","Spades"};
+		
+		for (int suit = 0; suit < 4; suit++) {
+			for (int i = 1; i < 14; i++) {
+				if (i>8) {
+					this.cards[i-1+(13*suit)]=new Card(suits[suit], (numbers[i-9]), (short)i);
+					continue;
+					
+				}
+				 this.cards[i-1+(13*suit)]=new Card(suits[suit], ""+((char)(startChar+i)), (short)i);
+				
+			}
+		}
+		
+	}
+	
+	public void showDeck(){
+		for (int i = 0; i < this.cards.length; i++) {
+			cards[i].showCard();
+		}
+	}
+	
+	
+	
+	
+
+}

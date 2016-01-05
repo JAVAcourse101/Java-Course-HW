@@ -1,0 +1,17 @@
+package War;
+
+public class Table {
+
+	public static void main(String[] args) {
+	   
+		Deck onTable=new Deck();
+	    onTable.generateFullDeck();
+	    onTable.shuffleDeck(2);
+	    onTable.showDeck();
+	    
+	    Player p1=new Player("James");
+	    Player p2=new Player("James");
+
+	}
+
+}

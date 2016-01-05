@@ -1,0 +1,32 @@
+package War;
+
+public class Deck {
+	
+	Card[] cards;
+	
+	Deck (){
+		this.cards=new Card[51];
+	}
+	
+	
+	public void generateFullDeck(){
+		char [] numbers={'J','Q','K','A'};
+		String[] suits={"","","",""};
+		this.cards[]=
+		
+		for (int suits = 0; suits < 4; suits++) {
+			for (int i = 2; i < 16; i++) {
+				if (condition) {
+					
+				}
+				
+			}
+		}
+		
+	}
+	
+	
+	
+	
+
+}

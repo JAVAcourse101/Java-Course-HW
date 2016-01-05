@@ -1,0 +1,10 @@
+package War;
+
+public class Player {
+	private String name;
+	private Deck playersDeck;
+
+	public Player(String name) {
+		this.name = name;
+	}
+}

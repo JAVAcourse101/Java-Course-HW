@@ -1,0 +1,53 @@
+package War;
+
+public class Card {
+	private String number;
+	private String Suit;
+	private short secretPower;
+	
+	
+	Card (String suit,String number,short secretPower){
+		this.setNumber(number);
+		this.setSuit(suit);
+		this.setSecretPower(secretPower);
+	}
+	
+	public void showCard(){
+		if (this==null) {
+			return;
+		}
+		System.out.println(getNumber()+" of "+ this.getSuit()+" ");
+	}
+
+
+	public String getNumber() {
+		return number;
+	}
+
+
+	public void setNumber(String number) {
+		this.number = number;
+	}
+
+
+	public String getSuit() {
+		return Suit;
+	}
+
+
+	public void setSuit(String suit) {
+		Suit = suit;
+	}
+
+
+	public short getSecretPower() {
+		return secretPower;
+	}
+
+
+	public void setSecretPower(short secretPower) {
+		this.secretPower = secretPower;
+	}
+	
+
+}

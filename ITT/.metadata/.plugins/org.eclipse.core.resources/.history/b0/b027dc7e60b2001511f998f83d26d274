@@ -1,0 +1,17 @@
+package War;
+
+public class Deck {
+	
+	
+	
+	public void generateFullDeck(){
+		for (int i = 0; i < 13; i++) {
+			
+		}
+	}
+	
+	
+	
+	
+
+}

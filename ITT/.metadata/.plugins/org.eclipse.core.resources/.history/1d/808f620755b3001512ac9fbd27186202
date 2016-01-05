@@ -1,0 +1,33 @@
+package War;
+
+public class Table {
+
+	public static void main(String[] args) {
+	   
+		Deck onTable=new Deck();
+	    onTable.generateFullDeck();
+	    onTable.shuffleDeck(2);
+	    onTable.showDeck();
+	    
+	    Player p1=new Player("James");
+	    Player p2=new Player("Deen");
+	    
+	    
+	   
+	    
+	   
+
+//	    onTable.dealCards(0, 25, p1);
+//	   
+//	    System.out.println(p1.getName());
+//	    p1.getPlayersDeck().showDeck();
+//	    System.out.println();
+//	    onTable.showDeck();
+	    
+//	    onTable.dealCards(26, 51, p2);
+//	    System.out.println(p2.getName());
+//	    p2.getPlayersDeck().showDeck();
+
+	}
+
+}
