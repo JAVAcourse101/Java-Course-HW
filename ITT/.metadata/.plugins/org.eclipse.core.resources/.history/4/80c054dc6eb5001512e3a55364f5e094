@@ -1,0 +1,131 @@
+package Taks_1;
+
+public class Employee {
+	private String name;
+	private Task currentTask;
+	private int hoursLeft;
+	private static AllWork allwork;
+
+	public Employee(String name) {
+
+		this.setName(name);
+		this.startNewDayForWorker();;
+		if (Employee.allwork != null) {
+			this.setCurrentTask(Employee.allwork.getNextTask());
+		}
+	}
+
+	public void work() {
+
+		for (int i = 0; i < this.getAllwork().getMaxNumberOfPlacesForTasks(); i++) {
+			if (this.getHoursLeft() != 0) {
+				
+
+				if (this.getCurrentTask() == null) {
+					System.out.println("No task");
+					return;
+				}
+				this.showReport();
+				int hours = this.getHoursLeft()
+						- this.getCurrentTask().getWorkingHours();
+
+				if (hours >= 0) {
+					this.getCurrentTask().toString();
+					this.setHoursLeft(hours);
+					this.getCurrentTask().setWorkingHours(0);
+					this.showReport();
+					this.setCurrentTask(this.getAllwork().getNextTask());
+
+				} else {
+					this.getCurrentTask().toString();
+					this.getCurrentTask().setWorkingHours(hours * (-1));
+					this.setHoursLeft(0);
+					this.showReport();
+					this.getCurrentTask().setOwner(null);
+					this.setCurrentTask(null);
+					Employee.allwork.setCurrentUnassignedTask();
+
+				}
+
+			}
+
+		}
+
+	}
+
+	public void startWorkingDay() {
+		this.setHoursLeft(8);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public Task getCurrentTask() {
+		
+			return currentTask;
+		
+
+	}
+
+	public void setCurrentTask(Task currentTask) {
+		if (currentTask == null) {
+			return;
+		}
+		if (this.getCurrentTask() != null) {
+			this.removeTask();
+		}
+		this.currentTask = currentTask;
+		this.currentTask.setOwner(this);
+	}
+
+	public int getHoursLeft() {
+		return hoursLeft;
+	}
+
+	public void setHoursLeft(int hoursLeft) {
+		if (hoursLeft < 0) {
+			return;
+		}
+		if (hoursLeft > 8) {
+			System.out.println("This worker has 8 hour working day");
+			this.hoursLeft = 8;
+		}
+		this.hoursLeft = hoursLeft;
+	}
+
+	public void startNewDayForWorker() {
+		this.setHoursLeft(8);
+	}
+
+	private void setName(String name) {
+		if (name == null || name.length() == 0) {
+			return;
+		}
+		this.name = name;
+	}
+
+	public AllWork getAllwork() {
+		return allwork;
+	}
+
+	public static void setAllwork(AllWork allwork) {
+		Employee.allwork = allwork;
+	}
+
+	public void showReport() {
+		System.out.print(this.getName()+" has "+this.getHoursLeft()+" to go and ");
+		if (this.getCurrentTask()!=null) {
+			System.out.print( " his current task is "+this.getCurrentTask().toString()+"\n");
+			return;
+		}
+		System.out.print("he has no current task\n");
+		
+		
+
+	}
+
+	public void removeTask() {
+		this.currentTask.setOwner(null);
+	}
+}

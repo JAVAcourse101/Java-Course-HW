@@ -1,0 +1,22 @@
+package bigTable;
+
+public class Go {
+
+	public static void main(String[] args) {
+		BigDatabase[] values=new BigDatabase[10];
+		
+		BigDatabase.GenerateServiceTypeTable();
+		BigDatabase.GenerateCountryTable();
+		
+		
+		
+		
+		
+		for (int i = 0; i < values.length; i++) {
+			values[i]=new BigDatabase();
+			
+		}
+
+	}
+
+}

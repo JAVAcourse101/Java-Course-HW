@@ -1,0 +1,32 @@
+package draw;
+
+public class Quadrilateral {
+	protected double sideAB;
+	protected double sideBC;
+	protected double sideCD;
+	protected double sideDA;
+	
+	protected int angleABC;
+	protected int angleACD;
+	protected int angleCDA;
+	protected int angleDAB;
+	
+	protected double diagonalAC;
+	protected double diagonalBD;
+	
+	public Quadrilateral( double sideAB,double sideBC,double sideCD,double sideDA, int angleABC){
+		this.angleABC=angleABC;
+		
+		this.sideAB=sideAB;
+		this.sideBC=sideBC;
+		this.sideCD=sideCD;
+		this.sideDA=sideDA;
+		
+		this.angleABC=angleABC;
+		
+		this.diagonalAC= Math.sqrt(Math.pow(sideAB,2)+Math.pow(sideBC,2)-2*sideAB*sideBC*Math.cos(Math.toRadians(angleABC)));
+		
+		
+	}
+
+}

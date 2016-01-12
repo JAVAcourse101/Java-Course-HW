@@ -1,6 +1,0 @@
-package War;
-
-public class Player {
-	Deck playersDeck;
-
-}

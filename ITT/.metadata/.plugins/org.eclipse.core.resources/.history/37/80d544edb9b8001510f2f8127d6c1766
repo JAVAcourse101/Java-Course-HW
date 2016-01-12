@@ -1,0 +1,14 @@
+package draw;
+
+public class Quadrilateral {
+	protected double sideAB;
+	protected double sideBC;
+	protected double sideCD;
+	protected double sideDA;
+	
+	protected int angleABC;
+	protected int angleACD;
+	protected int angleCDA;
+	protected int angleDAB;
+
+}

@@ -19,4 +19,14 @@
 <fullyQualifiedTypeName name="War.Card"/>
 <fullyQualifiedTypeName name="War.Deck"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="Taks_1.AllWork"/>
+<fullyQualifiedTypeName name="Taks_1.Task"/>
+<fullyQualifiedTypeName name="Taks_1.Employee"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="bigTable.BigDatabase"/>
+<fullyQualifiedTypeName name="draw.ConvexQuadrilateral"/>
+<fullyQualifiedTypeName name="draw.Trapezoid"/>
+<fullyQualifiedTypeName name="draw.Parallelogram"/>
+<fullyQualifiedTypeName name="draw.Rectangle"/>
+<fullyQualifiedTypeName name="draw.Quadrilateral"/>
 </qualifiedTypeNameHistroy>
