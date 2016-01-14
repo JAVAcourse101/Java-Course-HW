@@ -1,0 +1,11 @@
+package task_1;
+
+public interface INotepadd {
+	void addTextToPage(int pageNum);
+	void replaceTextInPage(String newText,int pageNum);
+	void deleteTextInPage(int pageNum);
+	void printAllPages();
+
+
+
+}

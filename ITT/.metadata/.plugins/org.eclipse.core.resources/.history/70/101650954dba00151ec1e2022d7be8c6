@@ -1,0 +1,65 @@
+package task_1;
+
+import java.util.Scanner;
+
+public class SecuredNotePad extends NotePad implements INotepad {
+	String passWord;
+
+	public SecuredNotePad(int pages) {
+		super(pages);
+		Scanner sc = new Scanner(System.in);
+		System.err.println("Please enter a password for the Secured NotePad");
+		String pass = sc.next();
+		if (pass != null && pass.length() > 0) {
+			this.passWord = pass;
+		}
+		sc.close();
+	}
+
+	public boolean checkPass() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the password");
+		String pass = sc.next();
+		sc.close();
+		if (this.passWord.equals(pass)) {
+			return true;
+
+		}
+		System.err.println("Wrong Pass");
+		return false;
+
+	}
+
+	@Override
+	public void addTextToPage(int pageNum) {
+		if (checkPass()) {
+
+		}
+
+	}
+
+	@Override
+	public void replaceTextInPage(String newText, int pageNum) {
+		if (checkPass()) {
+
+		}
+
+	}
+
+	@Override
+	public void deleteTextInPage(int pageNum) {
+		if (checkPass()) {
+
+		}
+
+	}
+
+	@Override
+	public void printAllPages() {
+		if (checkPass()) {
+
+		}
+
+	}
+
+}

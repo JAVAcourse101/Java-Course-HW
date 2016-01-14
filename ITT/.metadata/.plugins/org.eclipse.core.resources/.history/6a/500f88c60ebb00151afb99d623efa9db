@@ -1,0 +1,10 @@
+package task_1;
+
+public class ElectronicSecuredNotepad extends SecuredNotePad implements
+		IElectronicDevice {
+
+	private ElectronicSecuredNotepad(int pages, String password) {
+		super(true,pages);
+		this.passWord = password;
+	}
+}

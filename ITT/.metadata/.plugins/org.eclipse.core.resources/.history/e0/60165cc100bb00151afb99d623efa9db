@@ -1,0 +1,41 @@
+package task_1;
+
+public class ElectronicSecuredNotePad extends SecuredNotePad implements IElectronicDevice {
+
+	public ElectronicSecuredNotePad(int pages) {
+		super(pages);
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public void searchWord(String word) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void printAllPagesWithdigits() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void start() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void stop() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean isStarted() {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	
+}

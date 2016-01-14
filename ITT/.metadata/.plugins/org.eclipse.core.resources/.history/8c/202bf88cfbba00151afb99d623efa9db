@@ -1,0 +1,15 @@
+package task_1;
+
+public class NotePadDemo {
+
+	public static void main(String[] args) {
+		SimpleNotePad noteBook=new SimpleNotePad(5);
+		noteBook.addTextToPage(1, "PAge is not empty");
+		noteBook.addTextToPage(3, " PAge is not empty");
+		noteBook.replaceTextInPage(1,"replaced");
+		noteBook.printAllPages();
+	
+
+	}
+
+}

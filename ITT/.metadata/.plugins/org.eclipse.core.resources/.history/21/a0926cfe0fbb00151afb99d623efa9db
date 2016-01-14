@@ -1,0 +1,32 @@
+package task_1;
+
+public class ElectronicSecuredNotepad extends SecuredNotePad implements
+		IElectronicDevice {
+	private boolean isOn;
+
+	private ElectronicSecuredNotepad(int pages, String password) {
+		super(true, pages);
+		this.passWord = password;
+		this.isOn = false;
+	}
+
+	@Override
+	public void start() {
+		this.isOn = true;
+
+	}
+
+	@Override
+	public void stop() {
+		this.isOn = false;
+
+	}
+
+	@Override
+	public boolean isStarted() {
+		if (this.isOn) {
+			return true;
+		}
+		return false;
+	}
+}

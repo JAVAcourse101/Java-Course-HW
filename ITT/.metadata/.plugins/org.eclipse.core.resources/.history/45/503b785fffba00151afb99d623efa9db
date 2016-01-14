@@ -1,0 +1,52 @@
+package task_1;
+
+import java.util.Scanner;
+
+public abstract class SecuredNotePad extends NotePad implements INotepad {
+	String passWord;
+
+	private SecuredNotePad(int pages) {
+		super(pages);
+	}
+
+	public boolean checkPass() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Please enter the password");
+		String pass = sc.next();
+		sc.close();
+		if (this.passWord.equals(pass)) {
+			return true;
+
+		}
+		System.err.println("Wrong Pass");
+		return false;
+
+	}
+
+
+	public static SecuredNotePad createSecuredNotePad(String name,int pages){
+		Scanner sc = new Scanner(System.in);
+		
+		System.err.println("Please enter a password for the Secured NotePad");
+		String pass = sc.next();
+		if (pass != null && pass.length() > 0) {
+			SecuredNotePad sNP = new SecuredNotePad(pages) {
+				
+				@Override
+				public void searchWord(String word) {
+					// TODO Auto-generated method stub
+					
+				}
+				
+				@Override
+				public void printAllPagesWithdigits() {
+					// TODO Auto-generated method stub
+					
+				}
+			};
+		}
+		sc.close();
+	}
+	
+
+}

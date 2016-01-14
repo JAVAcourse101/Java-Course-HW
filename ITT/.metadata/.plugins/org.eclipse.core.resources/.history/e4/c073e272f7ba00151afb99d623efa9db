@@ -1,0 +1,37 @@
+package task_1;
+
+public abstract class NotePad implements INotepad {
+	private Page[] pages;
+
+	public NotePad(int pages) {
+		if (pages < 0) {
+			pages = DEFAULT_NUMBER_OF_PAGES;
+		}
+		this.pages = new Page[pages];
+		for (int i = 0; i < this.pages.length; i++) {
+			this.pages[i] = new Page();
+		}
+	}
+
+	public void addTextToPage(int pageNum, String text) {
+		if (pageNum>DEFAULT_NUMBER_OF_PAGES||pageNum<1||text==null||text.length()==0) {
+			return;
+		}
+		this.pages[pageNum-1].addText(text);
+		
+		
+
+	}
+	
+	public void replaeceTextInPage(int pageNum, String text) {
+		if (pageNum>DEFAULT_NUMBER_OF_PAGES||pageNum<1||text==null||text.length()==0) {
+			return;
+		}
+		this.pages[pageNum-1].addText(text);
+		this.pages[pageNum-1].addText(text);
+		
+		
+
+	}
+
+}
