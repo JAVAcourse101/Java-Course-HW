@@ -1,0 +1,145 @@
+package store;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Sup implements Runnable {
+	private MusicStore musicStore;
+	private Map<String, Integer> deliveryTimes;
+	private String instrumentNeeded;
+	private int countNeeded=0;
+
+	public Sup() {
+		deliveryTimes = new HashMap<String, Integer>();
+
+	}
+
+	private void fillInstrumentDeliveryTimeList() {
+		Integer time = 500;
+
+		for (String name : musicStore.instrumentList.keySet()) {
+			this.deliveryTimes.put(name, time);
+			time += 50;
+		}
+
+	}
+
+	public void SetMusicStore(MusicStore musicStore) {
+		if (musicStore != null) {
+			this.musicStore = musicStore;
+			this.fillInstrumentDeliveryTimeList();
+		}
+	}
+
+	@Override
+	public void run() {
+		int i =1;
+		while(i <5){
+			System.out.println("Suplieer runs");
+			if (countNeeded==0) {
+				synchronized (musicStore) {
+					try {
+						System.out.println("Suplieer waits");
+						musicStore.wait();
+						
+					} catch (InterruptedException e) {
+						e.printStackTrace();
+					}
+				}
+				
+			}
+			
+			System.err.println("The supplier will need "+deliveryTimes.get(instrumentNeeded)*countNeeded+" seconds to deliver "+countNeeded+" "+instrumentNeeded);
+			this.countNeeded=0;
+			i++;
+		}
+		
+		
+
+	}
+
+//	public void run(String name, Integer count) {
+//		for (int i = 1; i <= 4 && !Thread.currentThread().isInterrupted();) {
+//			System.out.println("Suplier: runs");
+//
+//			// while (!musicStore.callSup) {
+//			// System.out.println(Thread.currentThread().getName() +
+//			// " Waiting");
+//			// try {
+//			// synchronized (musicStore.storage) {
+//			// musicStore.wait();
+//			// }
+//			// } catch (InterruptedException e) {
+//			// e.printStackTrace();
+//			// return;
+//			// }
+//			// }
+//
+//			// synchronized (musicStore.storage) {
+//			// Checkes storage
+//			// for (String instrumentType : musicStore.storage.keySet()) {
+//			// for (String instrumentName : musicStore.storage.get(
+//			// instrumentType).keySet()) {
+//			// if (musicStore.storage.get(instrumentType).get(
+//			// instrumentName) == 0) {
+//			// musicStore.buyInstrument(instrumentName,
+//			// MusicStore.INITIAL_COUNT);
+//			// System.out.println(Thread.currentThread().getName()
+//			// + " delivers " + MusicStore.INITIAL_COUNT
+//			// + " " + instrumentName);
+//			// }
+//			//
+//			// }
+//			//
+//			// }
+//
+//			// Checkes instrument List
+//
+//			// for (Entry<String, String> instrument : musicStore.instrumentList
+//			// .entrySet()) {
+//			//
+//			// if (!(musicStore.storage.keySet().contains(instrument
+//			// .getValue()))) {
+//			// musicStore.buyInstrument(instrument.getKey(),
+//			// MusicStore.INITIAL_COUNT);
+//			// System.out.println(Thread.currentThread().getName()
+//			// + " delivers " + MusicStore.INITIAL_COUNT + " "
+//			// + instrument.getKey());
+//			// continue;
+//			// }
+//			// if (!musicStore.storage.get(instrument.getValue()).keySet()
+//			// .contains(instrument.getKey())) {
+//			// musicStore.buyInstrument(instrument.getKey(),
+//			// MusicStore.INITIAL_COUNT);
+//			// System.out.println(Thread.currentThread().getName()
+//			// + " delivers " + MusicStore.INITIAL_COUNT + " "
+//			// + instrument.getKey());
+//			// continue;
+//			// }
+//			//
+//			// }
+//			// musicStore.callSup = false;
+//			// // musicStore.storage.notifyAll();
+//			// // }
+//
+//			i++;
+//		}
+//
+//	}
+
+	public int getCountNeeded() {
+		return countNeeded;
+	}
+
+	public void setCountNeeded(int countNeeded) {
+		this.countNeeded = countNeeded;
+	}
+
+	public String getInstrumentNeeded() {
+		return instrumentNeeded;
+	}
+
+	public void setInstrumentNeeded(String instrumentNeeded) {
+		this.instrumentNeeded = instrumentNeeded;
+	}
+}

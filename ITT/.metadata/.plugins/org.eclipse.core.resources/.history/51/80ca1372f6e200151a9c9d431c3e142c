@@ -1,0 +1,31 @@
+package store;
+
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+public class TPdemo {
+
+	static class MyTask implements Callable<String>{
+		 
+		@Override
+		public String call() throws Exception {
+			Thread.sleep(50);
+			System.out.println("Rabotq");
+			return "Ooooo poolche";
+		}
+	}
+	
+	public static void main(String[] args) {
+		long start = System.currentTimeMillis();
+		ExecutorService pool =Executors.newFixedThreadPool(4);
+		
+		for (int i = 0; i < 10; i++) {
+			pool.submit(new MyTask());
+		}
+
+		pool.shutdown();
+		System.out.println("Time taken" +(System.currentTimeMillis()-start));
+	}
+
+}

@@ -1,0 +1,22 @@
+package dateAndTime;
+
+import java.util.Calendar;
+
+public class DateAndTime {
+	public static void main(String[] args) {
+		Calendar cal = Calendar.getInstance();
+		System.out.println(cal.DATE);
+		System.out.println(cal.AUGUST);
+		System.out.println(cal.PM);
+		System.out.println(cal.DAY_OF_MONTH);
+		System.out.println(cal.DAY_OF_WEEK);
+		System.out.println(cal.YEAR);
+		System.out.println(cal.MONTH);
+		System.out.println(cal.YEAR);
+		System.out.println(cal.get(Calendar.YEAR));
+		
+		
+		
+	}
+
+}

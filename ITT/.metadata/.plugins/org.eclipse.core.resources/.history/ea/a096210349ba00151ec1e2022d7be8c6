@@ -1,6 +1,0 @@
-package task_1;
-
-public abstract class NotePad {
-	private Page [] pages;
-
-}
